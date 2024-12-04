@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "gts": "^6.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2",
+    "@types/node": "^22.7.5"
+  },
+  "scripts": {
+    "start": "npx ts-node index.ts",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run lint"
+  }
+}

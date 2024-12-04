@@ -1,4 +1,4 @@
-package io.hank.leetcode;
+package io.hank.leetcode.practices;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -48,7 +48,7 @@ import java.util.Map;
  * Follow-up: Can you come up with an algorithm that is less than O(n^2) time complexity?
  */
 public class _001_Two_Sum {
-    public static void main(String[] args) {
+    public void execute() {
         int[] result1 = twoSum(new int[]{2, 7, 11, 15}, 9);
         System.out.println(Arrays.toString(result1));
 
@@ -59,7 +59,7 @@ public class _001_Two_Sum {
         System.out.println(Arrays.toString(result3));
     }
 
-    public static int[] twoSum(int[] nums, int target) {
+    static int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> numMap = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             int complement = target - nums[i];
