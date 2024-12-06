@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>leetcode-practice-java</module>
+        <module>leetcode-practice-kotlin</module>
     </modules>
 
     <properties>
