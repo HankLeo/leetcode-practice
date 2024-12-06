@@ -59,7 +59,7 @@ public class _001_Two_Sum {
         System.out.println(Arrays.toString(result3));
     }
 
-    static int[] twoSum(int[] nums, int target) {
+    int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> numMap = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             int complement = target - nums[i];
