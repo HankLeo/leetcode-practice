@@ -48,6 +48,19 @@ import java.util.Map;
  * Follow-up: Can you come up with an algorithm that is less than O(n^2) time complexity?
  */
 public class _001_Two_Sum {
+    int[] twoSum(int[] nums, int target) {
+        Map<Integer, Integer> numMap = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            int complement = target - nums[i];
+            if (numMap.containsKey(complement)) {
+                return new int[]{numMap.get(complement), i};
+            }
+            numMap.put(nums[i], i);
+        }
+
+        return new int[]{}; // no matched
+    }
+
     public void execute() {
         int[] result1 = twoSum(new int[]{2, 7, 11, 15}, 9);
         System.out.println(Arrays.toString(result1));
@@ -57,18 +70,5 @@ public class _001_Two_Sum {
 
         int[] result3 = twoSum(new int[]{3, 3}, 6);
         System.out.println(Arrays.toString(result3));
-    }
-
-    int[] twoSum(int[] nums, int target) {
-        Map<Integer, Integer> numMap = new HashMap<>();
-        for (int i = 0; i < nums.length; i++) {
-            int complement = target - nums[i];
-            if (numMap.containsKey(complement)) {
-                return new int[]{numMap.get(complement), i};                
-            }
-            numMap.put(nums[i], i);
-        }
-
-        return new int[]{}; // no matched
     }
 }
