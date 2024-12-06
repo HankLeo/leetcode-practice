@@ -7,7 +7,7 @@ npm ci
 npm start
 ```
 
-## How to create a TypeScript project
+## How to create a single TypeScript package
 
 ```bash
 mkdir leetcode-practice-typescript
