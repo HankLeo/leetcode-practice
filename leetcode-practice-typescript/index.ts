@@ -1,3 +1,3 @@
-import {execute} from './src/_001_Two_Sum';
+import {execute} from './src/_002_Add_Two_Numbers';
 
 execute();
