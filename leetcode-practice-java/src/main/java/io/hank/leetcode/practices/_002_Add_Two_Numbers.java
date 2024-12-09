@@ -26,6 +26,24 @@ package io.hank.leetcode.practices;
  * Output: [8,9,9,9,0,0,0,1]
  */
 public class _002_Add_Two_Numbers {
+
+    static class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode() {
+        }
+
+        ListNode(int val) {
+            this.val = val;
+        }
+
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
+    }
+
     ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummyHead = new ListNode(0);
         ListNode pointer = dummyHead;
@@ -60,35 +78,12 @@ public class _002_Add_Two_Numbers {
     }
 
     public void execute() {
-        ListNode pointer;
         // Example 1
-        ListNode l1 = new ListNode(2);
-        pointer = l1.next = new ListNode(4);
-        pointer.next = new ListNode(3);
-
-        ListNode l2 = new ListNode(5);
-        pointer = l2.next = new ListNode(6);
-        pointer.next = new ListNode(4);
+        ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
+        ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
 
         printerResult(addTwoNumbers(l1, l2));
 
-    }
-
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
     }
 
 }
