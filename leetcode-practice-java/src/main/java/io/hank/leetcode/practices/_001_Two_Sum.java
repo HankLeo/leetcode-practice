@@ -47,7 +47,7 @@ import java.util.Map;
  * <p>
  * Follow-up: Can you come up with an algorithm that is less than O(n^2) time complexity?
  */
-public class _001_Two_Sum {
+public class _001_Two_Sum extends LeetcodeProblemSolution {
     int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> numMap = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
@@ -61,14 +61,26 @@ public class _001_Two_Sum {
         return new int[]{}; // no matched
     }
 
+    @Override
     public void execute() {
-        int[] result1 = twoSum(new int[]{2, 7, 11, 15}, 9);
-        System.out.println(Arrays.toString(result1));
+        super.execute();
 
+        int[] input1 = {2, 7, 11, 15};
+        int target1 = 9;
+        System.out.println("Input: nums = " + Arrays.toString(input1) + ", target = " + target1);
+        int[] result1 = twoSum(input1, target1);
+        System.out.println("Output: " + Arrays.toString(result1));
+
+        int[] input2 = {2, 3, 4};
+        int target2 = 6;
+        System.out.println("Input: nums = " + Arrays.toString(input2) + ", target = " + target2);
         int[] result2 = twoSum(new int[]{2, 3, 4}, 6);
-        System.out.println(Arrays.toString(result2));
+        System.out.println("Output: " + Arrays.toString(result2));
 
+        int[] input3 = {3, 3};
+        int target3 = 6;
+        System.out.println("Input: nums = " + Arrays.toString(input3) + ", target = " + target3);
         int[] result3 = twoSum(new int[]{3, 3}, 6);
-        System.out.println(Arrays.toString(result3));
+        System.out.println("Output: " + Arrays.toString(result3));
     }
 }

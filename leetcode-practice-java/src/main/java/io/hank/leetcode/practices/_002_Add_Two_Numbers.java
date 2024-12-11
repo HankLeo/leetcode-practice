@@ -25,24 +25,7 @@ package io.hank.leetcode.practices;
  * <p>
  * Output: [8,9,9,9,0,0,0,1]
  */
-public class _002_Add_Two_Numbers {
-
-    static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-    }
+public class _002_Add_Two_Numbers extends LeetcodeProblemSolution {
 
     ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummyHead = new ListNode(0);
@@ -68,22 +51,42 @@ public class _002_Add_Two_Numbers {
         return result;
     }
 
-    void printerResult(ListNode result) {
+    String parseListNodeToString(ListNode result) {
         StringBuilder output = new StringBuilder();
         while (result != null) {
             output.append(result.val);
             result = result.next;
         }
-        System.out.println(output);
+        return output.toString();
     }
 
+    @Override
     public void execute() {
+        super.execute();
+
         // Example 1
         ListNode l1 = new ListNode(2, new ListNode(4, new ListNode(3)));
         ListNode l2 = new ListNode(5, new ListNode(6, new ListNode(4)));
+        System.out.println("Input: l1 = " + parseListNodeToString(l1) + ", l2 = " + parseListNodeToString(l2));
+        System.out.println("Output: " + parseListNodeToString(addTwoNumbers(l1, l2)));
 
-        printerResult(addTwoNumbers(l1, l2));
+    }
 
+    static class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode() {
+        }
+
+        ListNode(int val) {
+            this.val = val;
+        }
+
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
     }
 
 }
