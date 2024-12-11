@@ -41,7 +41,7 @@ import java.util.*
  *
  * Follow-up: Can you come up with an algorithm that is less than O(n^2) time complexity?
  */
-class _001_Two_Sum {
+class _001_Two_Sum : LeetcodeProblemSolution() {
     private fun twoSum(nums: IntArray, target: Int): IntArray {
         val numMap = HashMap<Int, Int>()
         nums.forEachIndexed { index, element ->
@@ -54,8 +54,28 @@ class _001_Two_Sum {
         return intArrayOf()
     }
 
-    fun execute() {
-        val result1 = twoSum(intArrayOf(2, 7, 11, 15), 9)
-        println(result1.contentToString())
+    override fun execute() {
+        super.execute()
+
+        // Example 1
+        val input1 = intArrayOf(2, 7, 11, 15)
+        val target1 = 9
+        println("Input: nums = ${input1.contentToString()}, target = $target1")
+        val result1 = twoSum(input1, target1)
+        println("Output: ${result1.contentToString()}")
+
+        // Example 2
+        val input2 = intArrayOf(2, 3, 4)
+        val target2 = 6
+        println("Input: nums = ${input2.contentToString()}, target = $target2")
+        val result2 = twoSum(input2, target2)
+        println("Output: ${result2.contentToString()}")
+
+        // Example 1
+        val input3 = intArrayOf(3, 3)
+        val target3 = 6
+        println("Input: nums = ${input3.contentToString()}, target = $target3")
+        val result3 = twoSum(input3, target3)
+        println("Output: ${result3.contentToString()}")
     }
 }

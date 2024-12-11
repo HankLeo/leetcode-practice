@@ -25,7 +25,7 @@ package io.hank.leetcode.kotlin.practices
  *
  * Output: [8,9,9,9,0,0,0,1]
  */
-class _002_Add_Two_Numbers {
+class _002_Add_Two_Numbers: LeetcodeProblemSolution() {
 
     class ListNode(val `val`: Int, var next: ListNode? = null)
 
@@ -56,21 +56,23 @@ class _002_Add_Two_Numbers {
         }
     }
 
-    private fun printResult(result: ListNode?) {
+    private fun parseListNodeToString(result: ListNode?): String {
         var pointer = result
         val sb = StringBuilder()
         while (pointer != null) {
             sb.append(pointer.`val`)
             pointer = pointer.next
         }
-        println(sb.toString())
+        return sb.toString()
     }
 
-    fun execute() {
+    override fun execute() {
+        super.execute()
+
         // Example 1
         val l1 = ListNode(2, ListNode(4, ListNode(3)))
         val l2 = ListNode(5, ListNode(6, ListNode(4)))
-
-        println(printResult(addTwoNumbers(l1, l2)))
+        println("Input: l1 = ${parseListNodeToString(l1)}, l2 = ${parseListNodeToString(l2)}")
+        println("Output: ${parseListNodeToString(addTwoNumbers(l1, l2))}")
     }
 }
