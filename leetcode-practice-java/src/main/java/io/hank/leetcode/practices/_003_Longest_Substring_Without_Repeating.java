@@ -67,11 +67,11 @@ public class _003_Longest_Substring_Without_Repeating extends LeetcodeProblemSol
         // Example 2
         String input2 = "bbbbb";
         System.out.println("Input: s = " + input2);
-        System.out.println("Output: " + lengthOfLongestSubstring("bbbbb"));
+        System.out.println("Output: " + lengthOfLongestSubstring(input2));
 
         // Example 3
         String input3 = "pwwkew";
         System.out.println("Input: s = " + input3);
-        System.out.println("Output: " + lengthOfLongestSubstring("pwwkew"));
+        System.out.println("Output: " + lengthOfLongestSubstring(input3));
     }
 }
