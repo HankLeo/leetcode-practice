@@ -1,4 +1,4 @@
-import {execute} from './src/_003_Longest_Substring_Without_Repeating';
+import {execute} from './src/_004_Median_of_Two_Sorted_Arrays';
 
 console.log('Hello, Leetcode!')
 execute();
