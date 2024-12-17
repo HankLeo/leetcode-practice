@@ -1,7 +1,7 @@
 package io.hank.leetcode.kotlin.practices
 
-import org.junit.jupiter.api.Assertions.assertEquals
 import kotlin.test.Test
+import kotlin.test.assertEquals
 
 class _005_Longest_Palindromic_Substring_Test {
 

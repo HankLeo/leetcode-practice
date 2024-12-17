@@ -1,3 +1,26 @@
+/**
+ * Given a string s, return the longest palindromic substring in s.
+ * <p>
+ * Example 1:
+ * <p>
+ * Input: s = "babad"
+ * <p>
+ * Output: "bab"
+ * <p>
+ * Explanation: "aba" is also a valid answer.
+ * <p>
+ * Example 2:
+ * <p>
+ * Input: s = "cbbd"
+ * <p>
+ * Output: "bb"
+ * <p>
+ * Constraints:
+ * <p>
+ * 1 <= s.length <= 1000
+ * <p>
+ * s consist of only digits and English letters.
+ */
 function longestPalindrome(s: string): string {
   if (s.length < 2) {
     return s
