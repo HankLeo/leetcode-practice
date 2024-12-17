@@ -1,9 +1,10 @@
 package io.hank.leetcode.kotlin.practices
 
-import io.hank.leetcode.kotlin.utils.CommonUtils
+import io.hank.leetcode.kotlin.complexity.ComplexityProcessor
 
-open class LeetcodeProblemSolution {
+abstract class LeetcodeProblemSolution {
     open fun execute() {
-        CommonUtils.printProblemName(this)
+        println("==== Problem: ${this::class.simpleName} ====")
+        ComplexityProcessor.printComplexity(this)
     }
 }

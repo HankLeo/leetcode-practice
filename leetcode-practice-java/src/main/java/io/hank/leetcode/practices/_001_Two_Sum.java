@@ -4,9 +4,9 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-import io.hank.leetcode.annotations.ComplexityType;
-import io.hank.leetcode.annotations.SpaceComplexity;
-import io.hank.leetcode.annotations.TimeComplexity;
+import io.hank.leetcode.complexity.ComplexityType;
+import io.hank.leetcode.complexity.SpaceComplexity;
+import io.hank.leetcode.complexity.TimeComplexity;
 
 /**
  * Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.

@@ -1,5 +1,9 @@
 package io.hank.leetcode.kotlin.practices
 
+import io.hank.leetcode.kotlin.complexity.ComplexityType
+import io.hank.leetcode.kotlin.complexity.SpaceComplexity
+import io.hank.leetcode.kotlin.complexity.TimeComplexity
+
 /**
  * Given a string s, return the longest palindromic substring in s.
  *
@@ -23,7 +27,10 @@ package io.hank.leetcode.kotlin.practices
  *
  * s consist of only digits and English letters.
  */
-class _005_Longest_Palindromic_Substring {
+class _005_Longest_Palindromic_Substring : LeetcodeProblemSolution() {
+
+    @TimeComplexity(ComplexityType.O_N)
+    @SpaceComplexity(ComplexityType.O_N)
     fun longestPalindrome(s: String): String {
         if (s.length < 2) {
             return s

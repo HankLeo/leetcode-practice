@@ -1,8 +1,8 @@
 package io.hank.leetcode.practices;
 
-import io.hank.leetcode.annotations.ComplexityType;
-import io.hank.leetcode.annotations.SpaceComplexity;
-import io.hank.leetcode.annotations.TimeComplexity;
+import io.hank.leetcode.complexity.ComplexityType;
+import io.hank.leetcode.complexity.SpaceComplexity;
+import io.hank.leetcode.complexity.TimeComplexity;
 
 /**
  * Given a string s, return the longest palindromic substring in s.
