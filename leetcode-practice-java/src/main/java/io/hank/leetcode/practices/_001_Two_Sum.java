@@ -4,6 +4,10 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
+import io.hank.leetcode.annotations.ComplexityType;
+import io.hank.leetcode.annotations.SpaceComplexity;
+import io.hank.leetcode.annotations.TimeComplexity;
+
 /**
  * Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
  * <p>
@@ -48,6 +52,9 @@ import java.util.Map;
  * Follow-up: Can you come up with an algorithm that is less than O(n^2) time complexity?
  */
 public class _001_Two_Sum extends LeetcodeProblemSolution {
+
+    @TimeComplexity(ComplexityType.O_N)
+    @SpaceComplexity(ComplexityType.O_N)
     int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> numMap = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {

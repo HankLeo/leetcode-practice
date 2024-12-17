@@ -2,6 +2,10 @@ package io.hank.leetcode.practices;
 
 import java.util.Arrays;
 
+import io.hank.leetcode.annotations.ComplexityType;
+import io.hank.leetcode.annotations.SpaceComplexity;
+import io.hank.leetcode.annotations.TimeComplexity;
+
 /**
  * Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.
  * <p>
@@ -24,6 +28,9 @@ import java.util.Arrays;
  * Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
  */
 public class _004_Median_of_Two_Sorted_Arrays extends LeetcodeProblemSolution {
+
+    @TimeComplexity(ComplexityType.O_LOG_M_DIVIDE_LOG_N)
+    @SpaceComplexity(ComplexityType.O_1)
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int n1 = nums1.length;
         int n2 = nums2.length;

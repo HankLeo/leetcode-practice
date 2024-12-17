@@ -1,5 +1,9 @@
 package io.hank.leetcode.practices;
 
+import io.hank.leetcode.annotations.ComplexityType;
+import io.hank.leetcode.annotations.SpaceComplexity;
+import io.hank.leetcode.annotations.TimeComplexity;
+
 /**
  * Given a string s, return the longest palindromic substring in s.
  * <p>
@@ -24,6 +28,9 @@ package io.hank.leetcode.practices;
  * s consist of only digits and English letters.
  */
 public class _005_Longest_Palindromic_Substring extends LeetcodeProblemSolution {
+
+    @TimeComplexity(ComplexityType.O_N)
+    @SpaceComplexity(ComplexityType.O_N)
     String longestPalindrome(String s) {
         if (s == null || s.length() < 2) {
             return s;
