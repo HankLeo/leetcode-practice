@@ -1,4 +1,4 @@
-import {execute} from './src/_004_Median_of_Two_Sorted_Arrays';
+import {execute} from './src/_005_Longest_Palindromic_Substring';
 
 console.log('Hello, Leetcode!')
 execute();
