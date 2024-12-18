@@ -1,7 +1,7 @@
 # Leetcode practice
 
-In this project, I have several different implementations:
+In this project, I have several implementations in different languages:
 
-- Java
+- [Java](/leetcode-practice-java/src/main/java/io/hank/leetcode/practices)
 - Kotlin
 - TypeScript
