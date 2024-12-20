@@ -11,5 +11,6 @@ object Main {
         _003_Longest_Substring_Without_Repeating().execute()
         _004_Median_of_Two_Sorted_Arrays().execute()
         _005_Longest_Palindromic_Substring().execute()
+        _008_String_To_Integer().execute()
     }
 }
