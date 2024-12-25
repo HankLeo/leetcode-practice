@@ -17,5 +17,6 @@ public class Main {
         new _009_Palindrome_Number().execute();
         new _010_Regular_Expression_Matching().execute();
         new _011_Container_With_Most_Water().execute();
+        new _012_Integer_to_Roman().execute();
     }
 }
