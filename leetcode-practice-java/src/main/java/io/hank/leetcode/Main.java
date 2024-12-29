@@ -19,5 +19,7 @@ public class Main {
         new _011_Container_With_Most_Water().execute();
         new _012_Integer_to_Roman().execute();
         new _013_Roman_to_Integer().execute();
+        new _014_Longest_Common_Prefix().execute();
+        new _015_3Sum().execute();
     }
 }
