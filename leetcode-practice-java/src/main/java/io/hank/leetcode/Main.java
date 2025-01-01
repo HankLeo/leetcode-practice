@@ -21,5 +21,6 @@ public class Main {
         new _013_Roman_to_Integer().execute();
         new _014_Longest_Common_Prefix().execute();
         new _015_3Sum().execute();
+        new _016_3Sum_Closest().execute();
     }
 }
