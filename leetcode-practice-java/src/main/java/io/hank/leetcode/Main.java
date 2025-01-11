@@ -23,5 +23,6 @@ public class Main {
         new _015_3Sum().execute();
         new _016_3Sum_Closest().execute();
         new _167_Two_Sum_II_SortedArray().execute();
+        new _633_Sum_of_Square_Numbers().execute();
     }
 }
