@@ -30,7 +30,7 @@ import io.hank.leetcode.complexity.TimeComplexity;
  */
 public class _009_Palindrome_Number extends LeetcodeProblemSolution {
 
-    @TimeComplexity(ComplexityType.O_LG_N)
+    @TimeComplexity(ComplexityType.O_LOG_N)
     @SpaceComplexity(ComplexityType.O_1)
     boolean isPalindrome(int x) {
         if (x < 0 || (x != 0 && x % 10 == 0)) {
