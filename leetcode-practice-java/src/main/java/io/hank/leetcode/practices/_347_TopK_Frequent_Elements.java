@@ -1,6 +1,11 @@
 package io.hank.leetcode.practices;
 
+import io.hank.leetcode.complexity.ComplexityType;
+import io.hank.leetcode.complexity.SpaceComplexity;
+import io.hank.leetcode.complexity.TimeComplexity;
+
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -33,29 +38,38 @@ import java.util.Map;
  * </pre>
  */
 public class _347_TopK_Frequent_Elements extends LeetcodeProblemSolution {
+    @TimeComplexity(ComplexityType.O_N)
+    @SpaceComplexity(ComplexityType.O_N)
     int[] topKFrequent(int[] nums, int k) {
         Map<Integer, Integer> freqMap = new HashMap<>();
         for (int num : nums) {
             freqMap.put(num, freqMap.getOrDefault(num, 0) + 1);
         }
         // freq can be o..nums.length
-        List<Integer>[] buckets = new List[nums.length + 1];
+        List<Integer>[] buckets = new ArrayList[nums.length + 1];
         freqMap.forEach((num, freq) -> {
             if (buckets[freq] == null) {
                 buckets[freq] = new ArrayList<>();
             }
             buckets[freq].add(num);
         });
-        List<Integer> topK = new ArrayList<>();
-        for (int i = nums.length; i > 0 && topK.size() < k; i--) {
+        int[] topK = new int[k];
+        for (int i = nums.length, j = 0; i > 0 && j < k; i--) {
             if (buckets[i] != null) {
-                if (buckets[i].size() <= k - topK.size()) {
-                    topK.addAll(buckets[i]);
-                } else {
-                    topK.addAll(buckets[i].subList(0, k - topK.size()));
+                for (int m = 0; m < buckets[i].size() && j < k; j++, m++) {
+                    topK[j] = buckets[i].get(m);
                 }
             }
         }
-        return topK.stream().mapToInt(i -> i).toArray();
+        return topK;
+    }
+
+    @Override
+    public void execute() {
+        super.execute();
+        int[] nums = { 1, 1, 1, 2, 2, 3 };
+        int k = 2;
+        System.out.println("Input: nums = " + Arrays.toString(nums) + ", k = " + k);
+        System.out.println("Output: " + Arrays.toString(topKFrequent(nums, k)));
     }
 }
