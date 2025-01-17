@@ -1,0 +1,4 @@
+fileignoreconfig:
+- filename: leetcode-practice-java/src/main/java/io/hank/leetcode/practices/_451_Sort_Characters_By_Frequency.java
+  checksum: 32968a7091a37d20582ba80b5d53e2ab6effd48146ef3bc23d6c7663a8866e16
+version: "1.0"
