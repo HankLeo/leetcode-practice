@@ -29,6 +29,7 @@ public class Main {
         new _215_Kth_Largest_Element_in_Array().execute();
         new _345_Reverse_Vowels_of_String().execute();
         new _347_TopK_Frequent_Elements().execute();
+        new _435_Nonoverlapping_Intervals().execute();
         new _451_Sort_Characters_By_Frequency().execute();
         new _455_Assign_Cookies().execute();
         new _524_Longest_Word_in_Dictionary_through_Deleting().execute();
