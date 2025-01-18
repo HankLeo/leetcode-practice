@@ -2,9 +2,9 @@ package io.hank.leetcode.practices;
 
 import java.util.Arrays;
 
-import io.hank.leetcode.complexity.ComplexityType;
-import io.hank.leetcode.complexity.SpaceComplexity;
-import io.hank.leetcode.complexity.TimeComplexity;
+import io.hank.leetcode.annotations.ComplexityType;
+import io.hank.leetcode.annotations.SpaceComplexity;
+import io.hank.leetcode.annotations.TimeComplexity;
 
 /**
  * Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.

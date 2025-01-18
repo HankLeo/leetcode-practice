@@ -3,9 +3,9 @@ package io.hank.leetcode.practices;
 import java.util.Arrays;
 import java.util.PriorityQueue;
 
-import io.hank.leetcode.complexity.ComplexityType;
-import io.hank.leetcode.complexity.SpaceComplexity;
-import io.hank.leetcode.complexity.TimeComplexity;
+import io.hank.leetcode.annotations.ComplexityType;
+import io.hank.leetcode.annotations.SpaceComplexity;
+import io.hank.leetcode.annotations.TimeComplexity;
 
 /**
  * <pre>
@@ -77,12 +77,13 @@ public class _215_Kth_Largest_Element_in_Array extends LeetcodeProblemSolution {
         }
         return nums[targetIndex];
     }
+
     private int partition(int[] nums, int start, int end) {
         // use start index as pivot
         int i = start, j = end + 1;
         while (true) {
-            while (nums[++i] < nums[start] && i < end);
-            while (nums[--j] > nums[start] && j > start);
+            while (nums[++i] < nums[start] && i < end) ;
+            while (nums[--j] > nums[start] && j > start) ;
             if (i < j) {
                 swap(nums, i, j);
             } else {
@@ -92,6 +93,7 @@ public class _215_Kth_Largest_Element_in_Array extends LeetcodeProblemSolution {
         swap(nums, start, j);
         return j;
     }
+
     private void swap(int[] nums, int i, int j) {
         int temp = nums[i];
         nums[i] = nums[j];

@@ -2,9 +2,9 @@ package io.hank.leetcode.practices;
 
 import java.util.Arrays;
 
-import io.hank.leetcode.complexity.ComplexityType;
-import io.hank.leetcode.complexity.SpaceComplexity;
-import io.hank.leetcode.complexity.TimeComplexity;
+import io.hank.leetcode.annotations.ComplexityType;
+import io.hank.leetcode.annotations.SpaceComplexity;
+import io.hank.leetcode.annotations.TimeComplexity;
 
 public class _455_Assign_Cookies extends LeetcodeProblemSolution {
     @TimeComplexity(ComplexityType.O_N_LOG_N)

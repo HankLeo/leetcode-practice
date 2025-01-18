@@ -2,9 +2,7 @@ package io.hank.leetcode.practices;
 
 import java.util.Arrays;
 
-import io.hank.leetcode.complexity.ComplexityType;
-import io.hank.leetcode.complexity.SpaceComplexity;
-import io.hank.leetcode.complexity.TimeComplexity;
+import io.hank.leetcode.annotations.*;
 
 /**
  * <pre>
@@ -38,6 +36,7 @@ import io.hank.leetcode.complexity.TimeComplexity;
  * </pre>
  */
 public class _435_Nonoverlapping_Intervals extends LeetcodeProblemSolution {
+    @Topic(TopicType.GREEDY)
     @TimeComplexity(ComplexityType.O_N_LOG_N)
     @SpaceComplexity(ComplexityType.O_N)
     int eraseOverlapIntervals(int[][] intervals) {

@@ -1,4 +1,4 @@
-package io.hank.leetcode.complexity;
+package io.hank.leetcode.annotations;
 
 public enum ComplexityType {
     O_1("O(1)"),

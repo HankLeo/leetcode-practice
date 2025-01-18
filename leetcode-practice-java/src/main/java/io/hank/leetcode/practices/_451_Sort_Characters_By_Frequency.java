@@ -1,8 +1,8 @@
 package io.hank.leetcode.practices;
 
-import io.hank.leetcode.complexity.ComplexityType;
-import io.hank.leetcode.complexity.SpaceComplexity;
-import io.hank.leetcode.complexity.TimeComplexity;
+import io.hank.leetcode.annotations.ComplexityType;
+import io.hank.leetcode.annotations.SpaceComplexity;
+import io.hank.leetcode.annotations.TimeComplexity;
 
 import java.util.*;
 
@@ -12,7 +12,7 @@ public class _451_Sort_Characters_By_Frequency extends LeetcodeProblemSolution {
     String frequencySort(String s) {
         // key: char, val: freq
         Map<Character, Integer> freqMap = new HashMap<>();
-        for (char c: s.toCharArray()) {
+        for (char c : s.toCharArray()) {
             freqMap.put(c, freqMap.getOrDefault(c, 0) + 1);
         }
 
@@ -29,7 +29,7 @@ public class _451_Sort_Characters_By_Frequency extends LeetcodeProblemSolution {
         StringBuilder sb = new StringBuilder();
         for (int i = buckets.length - 1; i > 0; i--) {
             if (buckets[i] != null) {
-                for (char c: buckets[i]) {
+                for (char c : buckets[i]) {
                     sb.append(String.valueOf(c).repeat(i));
                 }
             }

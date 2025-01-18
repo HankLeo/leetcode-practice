@@ -1,8 +1,8 @@
 package io.hank.leetcode.practices;
 
-import io.hank.leetcode.complexity.ComplexityType;
-import io.hank.leetcode.complexity.SpaceComplexity;
-import io.hank.leetcode.complexity.TimeComplexity;
+import io.hank.leetcode.annotations.ComplexityType;
+import io.hank.leetcode.annotations.SpaceComplexity;
+import io.hank.leetcode.annotations.TimeComplexity;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -67,7 +67,7 @@ public class _347_TopK_Frequent_Elements extends LeetcodeProblemSolution {
     @Override
     public void execute() {
         super.execute();
-        int[] nums = { 1, 1, 1, 2, 2, 3 };
+        int[] nums = {1, 1, 1, 2, 2, 3};
         int k = 2;
         System.out.println("Input: nums = " + Arrays.toString(nums) + ", k = " + k);
         System.out.println("Output: " + Arrays.toString(topKFrequent(nums, k)));
