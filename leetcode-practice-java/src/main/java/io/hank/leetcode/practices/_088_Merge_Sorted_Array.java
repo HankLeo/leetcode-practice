@@ -1,5 +1,8 @@
 package io.hank.leetcode.practices;
 
+import io.hank.leetcode.annotations.Topic;
+import io.hank.leetcode.annotations.TopicType;
+
 /**
  * <pre>
  * You are given two integer arrays nums1 and nums2, sorted in non-decreasing order, and two integers m and n, representing the number of elements in nums1 and nums2 respectively.
@@ -41,6 +44,8 @@ package io.hank.leetcode.practices;
  * </pre>
  */
 public class _088_Merge_Sorted_Array extends LeetcodeProblemSolution {
+
+    @Topic(TopicType.TWO_POINTER)
     void merge(int[] nums1, int m, int[] nums2, int n) {
         int i = m - 1, j = n - 1, k = m + n - 1;
         while (j >= 0) {

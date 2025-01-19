@@ -1,5 +1,8 @@
 package io.hank.leetcode.practices;
 
+import io.hank.leetcode.annotations.Topic;
+import io.hank.leetcode.annotations.TopicType;
+
 /**
  * <pre>
  * Given a non-negative integer c, decide whether there're two integers a and b such that a^2 + b^2 = c.
@@ -23,6 +26,8 @@ package io.hank.leetcode.practices;
  * </pre>
  */
 public class _633_Sum_of_Square_Numbers extends LeetcodeProblemSolution {
+
+    @Topic(TopicType.TWO_POINTER)
     boolean judgeSquareSum(int c) {
         long left = 0, right = (long) Math.sqrt(c);
 

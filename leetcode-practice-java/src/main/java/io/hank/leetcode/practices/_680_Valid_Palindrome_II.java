@@ -1,8 +1,6 @@
 package io.hank.leetcode.practices;
 
-import io.hank.leetcode.annotations.ComplexityType;
-import io.hank.leetcode.annotations.SpaceComplexity;
-import io.hank.leetcode.annotations.TimeComplexity;
+import io.hank.leetcode.annotations.*;
 
 /**
  * <pre>
@@ -32,6 +30,8 @@ import io.hank.leetcode.annotations.TimeComplexity;
  * </pre>
  */
 public class _680_Valid_Palindrome_II extends LeetcodeProblemSolution {
+
+    @Topic(TopicType.TWO_POINTER)
     @TimeComplexity(ComplexityType.O_N)
     @SpaceComplexity(ComplexityType.O_1)
     boolean validPalindrome(String s) {

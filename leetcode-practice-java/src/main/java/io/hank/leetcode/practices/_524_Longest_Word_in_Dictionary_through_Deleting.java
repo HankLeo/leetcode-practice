@@ -2,9 +2,7 @@ package io.hank.leetcode.practices;
 
 import java.util.List;
 
-import io.hank.leetcode.annotations.ComplexityType;
-import io.hank.leetcode.annotations.SpaceComplexity;
-import io.hank.leetcode.annotations.TimeComplexity;
+import io.hank.leetcode.annotations.*;
 
 /**
  * <pre>
@@ -32,6 +30,7 @@ import io.hank.leetcode.annotations.TimeComplexity;
  */
 public class _524_Longest_Word_in_Dictionary_through_Deleting extends LeetcodeProblemSolution {
 
+    @Topic(TopicType.TWO_POINTER)
     @TimeComplexity(ComplexityType.O_MN)
     @SpaceComplexity(ComplexityType.O_1)
     String findLongestWord(String str, List<String> dictionary) {

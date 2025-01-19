@@ -1,8 +1,6 @@
 package io.hank.leetcode.practices;
 
-import io.hank.leetcode.annotations.ComplexityType;
-import io.hank.leetcode.annotations.SpaceComplexity;
-import io.hank.leetcode.annotations.TimeComplexity;
+import io.hank.leetcode.annotations.*;
 
 /**
  * <pre>
@@ -45,6 +43,8 @@ import io.hank.leetcode.annotations.TimeComplexity;
  * </pre>
  */
 public class _141_Linked_List_Cycle extends LeetcodeProblemSolution {
+
+    @Topic(TopicType.TWO_POINTER)
     @TimeComplexity(ComplexityType.O_N)
     @SpaceComplexity(ComplexityType.O_1)
     boolean hasCycle(ListNode head) {

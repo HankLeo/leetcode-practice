@@ -2,11 +2,10 @@ package io.hank.leetcode.practices;
 
 import java.util.Arrays;
 
-import io.hank.leetcode.annotations.ComplexityType;
-import io.hank.leetcode.annotations.SpaceComplexity;
-import io.hank.leetcode.annotations.TimeComplexity;
+import io.hank.leetcode.annotations.*;
 
 public class _455_Assign_Cookies extends LeetcodeProblemSolution {
+    @Topic(TopicType.GREEDY)
     @TimeComplexity(ComplexityType.O_N_LOG_N)
     @SpaceComplexity(ComplexityType.O_1)
     int findContentChildren(int[] g, int[] s) {

@@ -4,9 +4,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-import io.hank.leetcode.annotations.ComplexityType;
-import io.hank.leetcode.annotations.SpaceComplexity;
-import io.hank.leetcode.annotations.TimeComplexity;
+import io.hank.leetcode.annotations.*;
 
 /**
  * <pre>
@@ -40,6 +38,8 @@ import io.hank.leetcode.annotations.TimeComplexity;
  * </pre>
  */
 public class _345_Reverse_Vowels_of_String extends LeetcodeProblemSolution {
+
+    @Topic(TopicType.TWO_POINTER)
     @TimeComplexity(ComplexityType.O_N)
     @SpaceComplexity(ComplexityType.O_1)
     String reverseVowels(String s) {
