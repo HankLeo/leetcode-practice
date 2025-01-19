@@ -3,9 +3,7 @@ package io.hank.leetcode.practices;
 import java.util.Arrays;
 import java.util.PriorityQueue;
 
-import io.hank.leetcode.annotations.ComplexityType;
-import io.hank.leetcode.annotations.SpaceComplexity;
-import io.hank.leetcode.annotations.TimeComplexity;
+import io.hank.leetcode.annotations.*;
 
 /**
  * <pre>
@@ -35,6 +33,7 @@ import io.hank.leetcode.annotations.TimeComplexity;
  */
 public class _215_Kth_Largest_Element_in_Array extends LeetcodeProblemSolution {
 
+    @Topic(TopicType.SORT_AND_SELECTION)
     @TimeComplexity(ComplexityType.O_N_LOG_N)
     @SpaceComplexity(ComplexityType.O_1)
     int findKthLargestBySort(int[] nums, int k) {
@@ -84,11 +83,13 @@ public class _215_Kth_Largest_Element_in_Array extends LeetcodeProblemSolution {
         while (true) {
             while (nums[++i] < nums[start] && i < end) ;
             while (nums[--j] > nums[start] && j > start) ;
-            if (i < j) {
-                swap(nums, i, j);
-            } else {
+            if (i >= j) {
                 break;
             }
+            if (nums[i] == nums[j]) {
+                continue;
+            }
+            swap(nums, i, j);
         }
         swap(nums, start, j);
         return j;

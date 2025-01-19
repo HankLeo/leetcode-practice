@@ -1,14 +1,8 @@
 package io.hank.leetcode.practices;
 
-import io.hank.leetcode.annotations.ComplexityType;
-import io.hank.leetcode.annotations.SpaceComplexity;
-import io.hank.leetcode.annotations.TimeComplexity;
+import java.util.*;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import io.hank.leetcode.annotations.*;
 
 /**
  * <pre>
@@ -38,6 +32,8 @@ import java.util.Map;
  * </pre>
  */
 public class _347_TopK_Frequent_Elements extends LeetcodeProblemSolution {
+
+    @Topic(TopicType.SORT_AND_SELECTION)
     @TimeComplexity(ComplexityType.O_N)
     @SpaceComplexity(ComplexityType.O_N)
     int[] topKFrequent(int[] nums, int k) {

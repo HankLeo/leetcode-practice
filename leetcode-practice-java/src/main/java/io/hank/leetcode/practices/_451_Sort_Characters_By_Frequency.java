@@ -1,12 +1,15 @@
 package io.hank.leetcode.practices;
 
-import io.hank.leetcode.annotations.ComplexityType;
-import io.hank.leetcode.annotations.SpaceComplexity;
-import io.hank.leetcode.annotations.TimeComplexity;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
-import java.util.*;
+import io.hank.leetcode.annotations.*;
 
 public class _451_Sort_Characters_By_Frequency extends LeetcodeProblemSolution {
+
+    @Topic(TopicType.SORT_AND_SELECTION)
     @TimeComplexity(ComplexityType.O_N)
     @SpaceComplexity(ComplexityType.O_N)
     String frequencySort(String s) {
