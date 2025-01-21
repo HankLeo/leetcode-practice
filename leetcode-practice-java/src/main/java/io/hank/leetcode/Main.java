@@ -31,6 +31,7 @@ public class Main {
         new _347_TopK_Frequent_Elements().execute();
         new _435_Nonoverlapping_Intervals().execute();
         new _451_Sort_Characters_By_Frequency().execute();
+        new _452_Min_Arrows_to_Burst_Balloons().execute();
         new _455_Assign_Cookies().execute();
         new _524_Longest_Word_in_Dictionary_through_Deleting().execute();
         new _633_Sum_of_Square_Numbers().execute();
