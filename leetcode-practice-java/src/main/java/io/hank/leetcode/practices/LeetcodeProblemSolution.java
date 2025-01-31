@@ -30,7 +30,7 @@ public abstract class LeetcodeProblemSolution {
                         System.out.println("Method Name: " + method.getName());
                     }
                     if (topic != null) {
-                        System.out.println("Topic: " + topic.value());
+                        System.out.println("Topic: " + Arrays.toString(topic.value()));
                     }
                     if (timeComplexity != null) {
                         System.out.println("Time Complexity: " + timeComplexity.value());

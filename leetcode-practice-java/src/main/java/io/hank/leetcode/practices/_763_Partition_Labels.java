@@ -37,7 +37,7 @@ import io.hank.leetcode.annotations.*;
  */
 public class _763_Partition_Labels extends LeetcodeProblemSolution {
 
-    @Topic(TopicType.GREEDY)
+    @Topic({TopicType.GREEDY, TopicType.HASH})
     @TimeComplexity(ComplexityType.O_N)
     @SpaceComplexity(ComplexityType.O_1)
     List<Integer> partitionLabels(String s) {
