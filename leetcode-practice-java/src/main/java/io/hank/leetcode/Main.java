@@ -43,5 +43,6 @@ public class Main {
         new _633_Sum_of_Square_Numbers().execute();
         new _665_Non_decreasing_Array().execute();
         new _680_Valid_Palindrome_II().execute();
+        new _763_Partition_Labels().execute();
     }
 }
