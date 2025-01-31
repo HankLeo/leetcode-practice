@@ -40,6 +40,7 @@ public class Main {
         new _524_Longest_Word_in_Dictionary_through_Deleting().execute();
         new _605_Can_Place_Flowers().execute();
         new _633_Sum_of_Square_Numbers().execute();
+        new _665_Non_decreasing_Array().execute();
         new _680_Valid_Palindrome_II().execute();
     }
 }
