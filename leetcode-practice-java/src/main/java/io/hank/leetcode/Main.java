@@ -23,6 +23,7 @@ public class Main {
 //        new _015_3Sum().execute();
 //        new _016_3Sum_Closest().execute();
         new _053_Maximum_Subarray().execute();
+        new _069_Sqrt_X().execute();
         new _075_Sort_Colors().execute();
         new _088_Merge_Sorted_Array().execute();
         new _121_Best_Time_to_Buy_and_Sell_Stock().execute();

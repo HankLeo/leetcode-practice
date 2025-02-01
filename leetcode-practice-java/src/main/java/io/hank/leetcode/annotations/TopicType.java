@@ -4,6 +4,7 @@ public enum TopicType {
     HASH("Hash"),
     TWO_POINTER("Two Pointer"),
     SORT_AND_SELECTION("Sort and Selection"),
+    BINARY_SEARCH("Binary Search"),
     GREEDY("Greedy"),
     DP("Dynamic Programming");
 
