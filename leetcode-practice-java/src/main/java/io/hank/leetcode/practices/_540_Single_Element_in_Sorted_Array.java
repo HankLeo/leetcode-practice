@@ -31,7 +31,7 @@ import io.hank.leetcode.annotations.*;
 public class _540_Single_Element_in_Sorted_Array extends LeetcodeProblemSolution {
 
     @Topic(TopicType.BINARY_SEARCH)
-    @TimeComplexity(ComplexityType.O_N)
+    @TimeComplexity(ComplexityType.O_LOG_N)
     @SpaceComplexity(ComplexityType.O_1)
     int singleNonDuplicate(int[] nums) {
         if (nums.length == 1) {

@@ -31,6 +31,7 @@ public class Main {
         new _141_Linked_List_Cycle().execute();
         new _167_Two_Sum_II_SortedArray().execute();
         new _215_Kth_Largest_Element_in_Array().execute();
+        new _278_First_Bad_Version().execute();
         new _345_Reverse_Vowels_of_String().execute();
         new _347_TopK_Frequent_Elements().execute();
         new _392_Is_Subsequence().execute();
