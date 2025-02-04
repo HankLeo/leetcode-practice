@@ -22,6 +22,7 @@ public class Main {
 //        new _014_Longest_Common_Prefix().execute();
 //        new _015_3Sum().execute();
 //        new _016_3Sum_Closest().execute();
+        new _034_Find_First_Last_Element_in_Sorted_Array().execute();
         new _053_Maximum_Subarray().execute();
         new _069_Sqrt_X().execute();
         new _075_Sort_Colors().execute();
