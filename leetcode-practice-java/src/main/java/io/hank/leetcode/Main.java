@@ -29,6 +29,7 @@ public class Main {
         new _121_Best_Time_to_Buy_and_Sell_Stock().execute();
         new _122_Best_Time_to_Buy_and_Sell_Stock_II().execute();
         new _141_Linked_List_Cycle().execute();
+        new _153_Find_Minimum_in_Rotated_Sorted_Array().execute();
         new _167_Two_Sum_II_SortedArray().execute();
         new _215_Kth_Largest_Element_in_Array().execute();
         new _278_First_Bad_Version().execute();
