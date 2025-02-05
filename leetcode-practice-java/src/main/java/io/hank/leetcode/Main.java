@@ -33,6 +33,7 @@ public class Main {
         new _153_Find_Minimum_in_Rotated_Sorted_Array().execute();
         new _167_Two_Sum_II_SortedArray().execute();
         new _215_Kth_Largest_Element_in_Array().execute();
+        new _241_Different_Ways_Add_Parentheses().execute();
         new _278_First_Bad_Version().execute();
         new _345_Reverse_Vowels_of_String().execute();
         new _347_TopK_Frequent_Elements().execute();

@@ -10,7 +10,8 @@ public enum ComplexityType {
     O_MIN_M_N("O(Min(M,N))"),
     O_LOG_N("O(log(N))"),
     O_N_LOG_N("O(N*logN)"),
-    O_N_LOG_K("O(N*logK)");
+    O_N_LOG_K("O(N*logK)"),
+    O_2N("O(2^N)");
 
     private final String value;
 
