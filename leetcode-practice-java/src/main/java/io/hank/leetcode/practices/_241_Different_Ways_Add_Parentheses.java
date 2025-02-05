@@ -42,7 +42,7 @@ import io.hank.leetcode.annotations.*;
  */
 public class _241_Different_Ways_Add_Parentheses extends LeetcodeProblemSolution {
 
-    @Topic({TopicType.RECURSION, TopicType.MATH})
+    @Topic({TopicType.RECURSION, TopicType.DP, TopicType.MATH})
     @TimeComplexity(ComplexityType.O_2N)
     @SpaceComplexity(ComplexityType.O_2N)
     List<Integer> diffWaysToCompute(String expression) {

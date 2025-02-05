@@ -27,6 +27,7 @@ public class Main {
         new _069_Sqrt_X().execute();
         new _075_Sort_Colors().execute();
         new _088_Merge_Sorted_Array().execute();
+        new _095_Unique_Binary_Search_Trees_II().execute();
         new _121_Best_Time_to_Buy_and_Sell_Stock().execute();
         new _122_Best_Time_to_Buy_and_Sell_Stock_II().execute();
         new _141_Linked_List_Cycle().execute();
