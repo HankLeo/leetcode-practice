@@ -52,5 +52,6 @@ public class Main {
         new _680_Valid_Palindrome_II().execute();
         new _744_Find_Smallest_Letter_GT_Target().execute();
         new _763_Partition_Labels().execute();
+        new _1091_Shortest_Path_in_Binary_Matrix().execute();
     }
 }

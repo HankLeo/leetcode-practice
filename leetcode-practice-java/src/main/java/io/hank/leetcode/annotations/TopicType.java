@@ -10,7 +10,9 @@ public enum TopicType {
     BINARY_SEARCH("Binary Search"),
     GREEDY("Greedy"),
     RECURSION("Recursion"),
-    DP("Dynamic Programming");
+    DP("Dynamic Programming"),
+    MATRIX("Matrix"),
+    BFS("Breadth-First Search");
 
     private final String name;
 
