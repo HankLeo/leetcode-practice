@@ -1,12 +1,10 @@
 package io.hank.leetcode.practices;
 
+import io.hank.leetcode.annotations.*;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
-import io.hank.leetcode.annotations.ComplexityType;
-import io.hank.leetcode.annotations.SpaceComplexity;
-import io.hank.leetcode.annotations.TimeComplexity;
 
 /**
  * <pre>
@@ -48,6 +46,7 @@ import io.hank.leetcode.annotations.TimeComplexity;
  */
 public class _015_3Sum extends LeetcodeProblemSolution {
 
+    @Topic(TopicType.TWO_POINTER)
     @TimeComplexity(ComplexityType.O_N2)
     @SpaceComplexity(ComplexityType.O_1)
     List<List<Integer>> threeSum(int[] nums) {
