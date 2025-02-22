@@ -24,7 +24,7 @@ public class _451_Sort_Characters_By_Frequency extends LeetcodeProblemSolution {
         List<Character>[] buckets = new ArrayList[s.length() + 1];
         freqMap.forEach((c, freq) -> {
             if (buckets[freq] == null) {
-                buckets[freq] = new ArrayList();
+                buckets[freq] = new ArrayList<>();
             }
             buckets[freq].add(c);
         });

@@ -5,6 +5,7 @@ public enum ComplexityType {
     O_N("O(N)"),
     O_K("O(K)"),
     O_N2("O(N^2)"),
+    O_NSqrtN("O(N^Sqrt(N))"),
     O_MN("O(MN)"),
     O_LOG_M_DIVIDE_LOG_N("O(logM/logN)"),
     O_MIN_M_N("O(Min(M,N))"),
