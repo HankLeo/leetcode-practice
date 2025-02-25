@@ -12,7 +12,8 @@ public enum TopicType {
     RECURSION("Recursion"),
     DP("Dynamic Programming"),
     MATRIX("Matrix"),
-    BFS("Breadth-First Search");
+    BFS("Breadth-First Search"),
+    DFS("Depth-First Search"),;
 
     private final String name;
 

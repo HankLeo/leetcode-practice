@@ -117,5 +117,6 @@ public class Main {
         new _1091_Shortest_Path_in_Binary_Matrix().execute();
         new _279_Perfect_Squares().execute();
         new _127_Word_Ladder().execute();
+        new _695_Max_Area_of_Island().execute();
     }
 }
