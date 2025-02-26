@@ -119,5 +119,6 @@ public class Main {
         new _127_Word_Ladder().execute();
         new _695_Max_Area_of_Island().execute();
         new _200_Number_of_Islands().execute();
+        new _547_Number_of_Provinces().execute();
     }
 }

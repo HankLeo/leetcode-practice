@@ -81,16 +81,4 @@ public class _127_Word_Ladder extends LeetcodeProblemSolution {
         return 0;
     }
 
-    private boolean isConnected(String parent, String child) {
-        int diff = 0;
-        for (int i = 0; i < parent.length(); i++) {
-            if (diff > 1) {
-                return false;
-            }
-            if (parent.charAt(i) != child.charAt(i)) {
-                diff++;
-            }
-        }
-        return diff <= 1;
-    }
 }
