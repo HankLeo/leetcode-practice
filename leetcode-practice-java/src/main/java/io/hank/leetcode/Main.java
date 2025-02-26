@@ -118,5 +118,6 @@ public class Main {
         new _279_Perfect_Squares().execute();
         new _127_Word_Ladder().execute();
         new _695_Max_Area_of_Island().execute();
+        new _200_Number_of_Islands().execute();
     }
 }

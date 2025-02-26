@@ -42,7 +42,7 @@ import io.hank.leetcode.annotations.*;
 public class _695_Max_Area_of_Island extends LeetcodeProblemSolution {
     private static final int[][] DIRECTIONS = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
 
-    @Topic(TopicType.DFS)
+    @Topic({TopicType.DFS, TopicType.RECURSION})
     @TimeComplexity(ComplexityType.O_MN)
     @SpaceComplexity(ComplexityType.O_MN)
     int maxAreaOfIsland(int[][] grid) {
