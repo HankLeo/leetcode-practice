@@ -39,8 +39,8 @@ import io.hank.leetcode.annotations.*;
 public class _547_Number_of_Provinces extends LeetcodeProblemSolution {
 
     @Topic({TopicType.DFS, TopicType.RECURSION})
-    @TimeComplexity(ComplexityType.O_MN)
-    @SpaceComplexity(ComplexityType.O_MN)
+    @TimeComplexity(ComplexityType.O_N2)
+    @SpaceComplexity(ComplexityType.O_N2)
     int findCircleNum(int[][] isConnected) {
         int n = isConnected.length;
         int count = 0;
