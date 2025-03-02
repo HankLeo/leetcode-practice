@@ -34,7 +34,7 @@ import java.util.Queue;
  */
 public class _279_Perfect_Squares extends LeetcodeProblemSolution {
 
-    @Topic(TopicType.BFS)
+    @Topic({TopicType.BFS, TopicType.TREE})
     @TimeComplexity(ComplexityType.O_NSqrtN)
     @SpaceComplexity(ComplexityType.O_N)
     int maxSquares(int n) {

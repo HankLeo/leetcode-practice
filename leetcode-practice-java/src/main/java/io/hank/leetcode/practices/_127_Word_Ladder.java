@@ -40,7 +40,7 @@ import java.util.*;
  */
 public class _127_Word_Ladder extends LeetcodeProblemSolution {
 
-    @Topic(TopicType.BFS)
+    @Topic({TopicType.BFS, TopicType.TREE})
     @TimeComplexity(ComplexityType.O_MN)
     @SpaceComplexity(ComplexityType.O_N)
     int ladderLength(String beginWord, String endWord, List<String> wordList) {
