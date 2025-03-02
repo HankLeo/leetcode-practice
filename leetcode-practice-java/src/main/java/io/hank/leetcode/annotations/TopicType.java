@@ -13,7 +13,9 @@ public enum TopicType {
     DP("Dynamic Programming"),
     MATRIX("Matrix"),
     BFS("Breadth-First Search"),
-    DFS("Depth-First Search"),;
+    DFS("Depth-First Search"),
+    BACKTRACK("Backtrack"),
+    ;
 
     private final String name;
 
