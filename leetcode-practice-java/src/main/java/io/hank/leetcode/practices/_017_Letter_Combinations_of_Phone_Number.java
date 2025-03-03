@@ -8,6 +8,35 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * <pre>
+ * Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Return the answer in any order.
+ *
+ * A mapping of digits to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.
+ *
+ *
+ *
+ *
+ * Example 1:
+ *
+ * Input: digits = "23"
+ * Output: ["ad","ae","af","bd","be","bf","cd","ce","cf"]
+ * Example 2:
+ *
+ * Input: digits = ""
+ * Output: []
+ * Example 3:
+ *
+ * Input: digits = "2"
+ * Output: ["a","b","c"]
+ *
+ *
+ * Constraints:
+ *
+ * 0 <= digits.length <= 4
+ * digits[i] is a digit in the range ['2', '9'].
+ * </pre>
+ */
 public class _017_Letter_Combinations_of_Phone_Number extends LeetcodeProblemSolution {
     private static final Map<Character, String> map = new HashMap<>();
 
@@ -25,26 +54,25 @@ public class _017_Letter_Combinations_of_Phone_Number extends LeetcodeProblemSol
     @Topic({TopicType.BACKTRACK, TopicType.RECURSION})
     public List<String> letterCombinations(String digits) {
         List<String> result = new ArrayList<>();
-        if (digits == null || digits.length() == 0) {
+        if (digits == null || digits.isEmpty()) {
             return result;
         }
         backtrack(result, new StringBuilder(), digits, 0);
         return result;
     }
 
-    private void backtrack(List<String> result, StringBuilder prefix, String digits, int index) {
+    private void backtrack(List<String> result, StringBuilder sb, String digits, int index) {
         if (index == digits.length()) {
             // end the recursion
-            result.add(prefix.toString());
+            result.add(sb.toString());
             return;
         }
-        char digit = digits.charAt(index);
-        String cur = map.get(digit);
-        for (char c : cur.toCharArray()) {
-            prefix.append(c);
-            backtrack(result, prefix, digits, index + 1);
-            // backtracking
-            prefix.deleteCharAt(prefix.length() - 1);
+        // 2 -> abc
+        String letters = map.get(digits.charAt(index));
+        for (char c : letters.toCharArray()) {
+            sb.append(c);
+            backtrack(result, sb, digits, index + 1);
+            sb.deleteCharAt(sb.length() - 1);
         }
     }
 }
