@@ -81,5 +81,6 @@ public class Main {
         new _017_Letter_Combinations_of_Phone_Number().execute();
         new _093_Restore_IP_Addresses().execute();
         new _079_Word_Search().execute();
+        new _257_Binary_Tree_Paths().execute();
     }
 }
