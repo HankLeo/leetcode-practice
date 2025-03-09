@@ -84,5 +84,6 @@ public class Main {
         new _257_Binary_Tree_Paths().execute();
         new _046_Permutations().execute();
         new _047_Permutations_II().execute();
+        new _077_Combinations().execute();
     }
 }

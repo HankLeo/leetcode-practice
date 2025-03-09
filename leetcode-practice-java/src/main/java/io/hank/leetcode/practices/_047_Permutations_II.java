@@ -44,7 +44,7 @@ public class _047_Permutations_II extends LeetcodeProblemSolution {
 
     private void backtrack(int[] nums, List<List<Integer>> result, List<Integer> path, boolean[] used) {
         if (path.size() == nums.length) {
-//            result.add(path); wrong answer!!! the path will be changed in the backtracking, not to use reference
+            // result.add(path); wrong answer!!! the path will be changed in the backtracking, not to use reference
             // so we need to copy a new list
             result.add(new ArrayList<>(path));
             return;
