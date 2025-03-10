@@ -86,5 +86,6 @@ public class Main {
         new _047_Permutations_II().execute();
         new _077_Combinations().execute();
         new _039_Combination_Sum().execute();
+        new _040_Combination_Sum_II().execute();
     }
 }

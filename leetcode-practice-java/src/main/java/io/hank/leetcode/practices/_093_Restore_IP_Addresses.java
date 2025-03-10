@@ -61,7 +61,7 @@ public class _093_Restore_IP_Addresses extends LeetcodeProblemSolution {
             if (isValid(part)) {
                 ip.add(part);
                 backtrack(result, ip, s, index + i);
-                ip.remove(ip.size() - 1);
+                ip.removeLast();
             }
         }
     }
