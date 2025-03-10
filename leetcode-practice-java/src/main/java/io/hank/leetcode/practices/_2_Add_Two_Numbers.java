@@ -1,5 +1,8 @@
 package io.hank.leetcode.practices;
 
+import io.hank.leetcode.annotations.Topic;
+import io.hank.leetcode.annotations.TopicType;
+
 /**
  * You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
  * <p>
@@ -27,6 +30,7 @@ package io.hank.leetcode.practices;
  */
 public class _2_Add_Two_Numbers extends LeetcodeProblemSolution {
 
+    @Topic({TopicType.LINKED_LIST, TopicType.MATH})
     ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummyHead = new ListNode(0);
         ListNode pointer = dummyHead;

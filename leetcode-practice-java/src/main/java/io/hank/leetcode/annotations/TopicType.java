@@ -1,6 +1,7 @@
 package io.hank.leetcode.annotations;
 
 public enum TopicType {
+    LINKED_LIST("Linked List"),
     TREE("Tree"),
 
     HASH("Hash"),

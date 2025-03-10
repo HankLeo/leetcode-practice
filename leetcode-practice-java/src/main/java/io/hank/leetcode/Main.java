@@ -5,6 +5,7 @@ import io.hank.leetcode.practices.*;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello, Leetcode!");
+        runHash();
         runTwoPointer();
         runSort();
         runGreedy();
@@ -12,6 +13,12 @@ public class Main {
         runRecursion();
         runSearch();
         runBacktrack();
+        runLinkedList();
+    }
+
+    private static void runHash() {
+        System.out.println("\n******** Hash *******");
+        new _1_Two_Sum().execute();
     }
 
     private static void runTwoPointer() {
@@ -89,5 +96,9 @@ public class Main {
         new _40_Combination_Sum_II().execute();
         new _216_Combination_Sum_III().execute();
         new _78_Subsets().execute();
+    }
+
+    private static void runLinkedList() {
+        new _2_Add_Two_Numbers().execute();
     }
 }

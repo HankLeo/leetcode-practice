@@ -4,9 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-import io.hank.leetcode.annotations.ComplexityType;
-import io.hank.leetcode.annotations.SpaceComplexity;
-import io.hank.leetcode.annotations.TimeComplexity;
+import io.hank.leetcode.annotations.*;
 
 /**
  * Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
@@ -53,6 +51,7 @@ import io.hank.leetcode.annotations.TimeComplexity;
  */
 public class _1_Two_Sum extends LeetcodeProblemSolution {
 
+    @Topic({TopicType.HASH, TopicType.MATH})
     @TimeComplexity(ComplexityType.O_N)
     @SpaceComplexity(ComplexityType.O_N)
     int[] twoSum(int[] nums, int target) {
