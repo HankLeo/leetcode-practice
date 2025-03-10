@@ -20,7 +20,7 @@ public class Main {
         new _633_Sum_of_Square_Numbers().execute();
         new _345_Reverse_Vowels_of_String().execute();
         new _680_Valid_Palindrome_II().execute();
-        new _088_Merge_Sorted_Array().execute();
+        new _88_Merge_Sorted_Array().execute();
         new _141_Linked_List_Cycle().execute();
         new _524_Longest_Word_in_Dictionary_through_Deleting().execute();
     }
@@ -30,7 +30,7 @@ public class Main {
         new _215_Kth_Largest_Element_in_Array().execute();
         new _347_TopK_Frequent_Elements().execute();
         new _451_Sort_Characters_By_Frequency().execute();
-        new _075_Sort_Colors().execute();
+        new _75_Sort_Colors().execute();
     }
 
     private static void runGreedy() {
@@ -44,24 +44,24 @@ public class Main {
         new _605_Can_Place_Flowers().execute();
         new _392_Is_Subsequence().execute();
         new _665_Non_decreasing_Array().execute();
-        new _053_Maximum_Subarray().execute();
+        new _53_Maximum_Subarray().execute();
         new _763_Partition_Labels().execute();
     }
 
     private static void runBinarySearch() {
         System.out.println("\n******** Binary Search *******");
-        new _069_Sqrt_X().execute();
+        new _69_Sqrt_X().execute();
         new _744_Find_Smallest_Letter_GT_Target().execute();
         new _540_Single_Element_in_Sorted_Array().execute();
         new _278_First_Bad_Version().execute();
-        new _015_3Sum().execute();
-        new _034_Find_First_Last_Element_in_Sorted_Array().execute();
+        new _15_3Sum().execute();
+        new _34_Find_First_Last_Element_in_Sorted_Array().execute();
     }
 
     private static void runRecursion() {
         System.out.println("\n******** Recursion *******");
         new _241_Different_Ways_Add_Parentheses().execute();
-        new _095_Unique_Binary_Search_Trees_II().execute();
+        new _95_Unique_Binary_Search_Trees_II().execute();
     }
 
     private static void runSearch() {
@@ -78,15 +78,16 @@ public class Main {
 
     private static void runBacktrack() {
         System.out.println("\n******** Backtrack *******");
-        new _017_Letter_Combinations_of_Phone_Number().execute();
-        new _093_Restore_IP_Addresses().execute();
-        new _079_Word_Search().execute();
+        new _17_Letter_Combinations_of_Phone_Number().execute();
+        new _93_Restore_IP_Addresses().execute();
+        new _79_Word_Search().execute();
         new _257_Binary_Tree_Paths().execute();
-        new _046_Permutations().execute();
-        new _047_Permutations_II().execute();
-        new _077_Combinations().execute();
-        new _039_Combination_Sum().execute();
-        new _040_Combination_Sum_II().execute();
+        new _46_Permutations().execute();
+        new _47_Permutations_II().execute();
+        new _77_Combinations().execute();
+        new _39_Combination_Sum().execute();
+        new _40_Combination_Sum_II().execute();
         new _216_Combination_Sum_III().execute();
+        new _78_Subsets().execute();
     }
 }
