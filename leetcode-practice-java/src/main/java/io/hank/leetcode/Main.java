@@ -97,6 +97,8 @@ public class Main {
         new _216_Combination_Sum_III().execute();
         new _78_Subsets().execute();
         new _90_Subsets_II().execute();
+        new _131_Palindrome_Partitioning().execute();
+        new _37_Sudoku_Solver().execute();
     }
 
     private static void runLinkedList() {
