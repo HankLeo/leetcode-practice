@@ -13,12 +13,14 @@ public class Main {
         runRecursion();
         runSearch();
         runBacktrack();
+        runDP();
         runLinkedList();
     }
 
     private static void runHash() {
         System.out.println("\n******** Hash *******");
         new _1_Two_Sum().execute();
+        new _3_Longest_Substring_Without_Repeating().execute();
     }
 
     private static void runTwoPointer() {
@@ -30,6 +32,8 @@ public class Main {
         new _88_Merge_Sorted_Array().execute();
         new _141_Linked_List_Cycle().execute();
         new _524_Longest_Word_in_Dictionary_through_Deleting().execute();
+        new _15_3Sum().execute();
+        new _16_3Sum_Closest().execute();
     }
 
     private static void runSort() {
@@ -61,8 +65,8 @@ public class Main {
         new _744_Find_Smallest_Letter_GT_Target().execute();
         new _540_Single_Element_in_Sorted_Array().execute();
         new _278_First_Bad_Version().execute();
-        new _15_3Sum().execute();
         new _34_Find_First_Last_Element_in_Sorted_Array().execute();
+        new _4_Median_of_Two_Sorted_Arrays().execute();
     }
 
     private static void runRecursion() {
@@ -99,6 +103,11 @@ public class Main {
         new _90_Subsets_II().execute();
         new _131_Palindrome_Partitioning().execute();
         new _37_Sudoku_Solver().execute();
+    }
+
+    private static void runDP() {
+        new _5_Longest_Palindromic_Substring().execute();
+        new _10_Regular_Expression_Matching().execute();
     }
 
     private static void runLinkedList() {

@@ -1,5 +1,8 @@
 package io.hank.leetcode.practices;
 
+import io.hank.leetcode.annotations.Topic;
+import io.hank.leetcode.annotations.TopicType;
+
 import java.util.Arrays;
 
 /**
@@ -34,6 +37,8 @@ import java.util.Arrays;
  * Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
  */
 public class _3_Longest_Substring_Without_Repeating extends LeetcodeProblemSolution {
+
+    @Topic(TopicType.HASH)
     int lengthOfLongestSubstring(String s) {
         if (s == null || s.isEmpty()) {
             return 0;

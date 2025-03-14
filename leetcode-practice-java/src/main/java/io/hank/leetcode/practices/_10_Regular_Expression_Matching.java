@@ -1,5 +1,8 @@
 package io.hank.leetcode.practices;
 
+import io.hank.leetcode.annotations.Topic;
+import io.hank.leetcode.annotations.TopicType;
+
 /**
  * <pre>
  * Given an input string s and a pattern p, implement regular expression matching with support for '.' and '*' where:
@@ -32,6 +35,8 @@ package io.hank.leetcode.practices;
  * </pre>
  */
 public class _10_Regular_Expression_Matching extends LeetcodeProblemSolution {
+
+    @Topic({TopicType.DP, TopicType.RECURSION})
     boolean isMatch(String s, String p) {
         int m = s.length();
         int n = p.length();

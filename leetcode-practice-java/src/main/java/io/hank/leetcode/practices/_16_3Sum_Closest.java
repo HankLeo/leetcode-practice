@@ -1,10 +1,8 @@
 package io.hank.leetcode.practices;
 
-import java.util.Arrays;
+import io.hank.leetcode.annotations.*;
 
-import io.hank.leetcode.annotations.ComplexityType;
-import io.hank.leetcode.annotations.SpaceComplexity;
-import io.hank.leetcode.annotations.TimeComplexity;
+import java.util.Arrays;
 
 /**
  * <pre>
@@ -38,6 +36,7 @@ import io.hank.leetcode.annotations.TimeComplexity;
  */
 public class _16_3Sum_Closest extends LeetcodeProblemSolution {
 
+    @Topic(TopicType.TWO_POINTER)
     @TimeComplexity(ComplexityType.O_N2)
     @SpaceComplexity(ComplexityType.O_1)
     int threeSumClosest(int[] nums, int target) {
