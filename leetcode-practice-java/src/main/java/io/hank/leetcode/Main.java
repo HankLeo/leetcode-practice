@@ -103,6 +103,7 @@ public class Main {
         new _90_Subsets_II().execute();
         new _131_Palindrome_Partitioning().execute();
         new _37_Sudoku_Solver().execute();
+        new _51_N_Queens().execute();
     }
 
     private static void runDP() {
