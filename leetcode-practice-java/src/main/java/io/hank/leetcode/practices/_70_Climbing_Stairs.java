@@ -1,7 +1,6 @@
 package io.hank.leetcode.practices;
 
-import io.hank.leetcode.annotations.Topic;
-import io.hank.leetcode.annotations.TopicType;
+import io.hank.leetcode.annotations.*;
 
 /**
  * <pre>
@@ -35,12 +34,15 @@ import io.hank.leetcode.annotations.TopicType;
  */
 public class _70_Climbing_Stairs extends LeetcodeProblemSolution {
 
-    @Topic(TopicType.DP)
+    @Topic({TopicType.DP, TopicType.MATH})
+    @TimeComplexity(ComplexityType.O_N)
+    @SpaceComplexity(ComplexityType.O_1)
     public int climbStairs(int n) {
         if (n <= 2) {
             return n;
         }
 
+        // dp[n] = dp[n -1] + dp[n - 2]
         int n_1 = 2, n_2 = 1;
         for (int i = 2; i < n; i++) {
             int cur = n_1 + n_2;

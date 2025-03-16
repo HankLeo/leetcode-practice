@@ -110,6 +110,7 @@ public class Main {
         new _5_Longest_Palindromic_Substring().execute();
         new _10_Regular_Expression_Matching().execute();
         new _70_Climbing_Stairs().execute();
+        new _198_House_Robber().execute();
     }
 
     private static void runLinkedList() {
