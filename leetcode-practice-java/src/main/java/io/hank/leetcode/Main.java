@@ -109,6 +109,7 @@ public class Main {
     private static void runDP() {
         new _5_Longest_Palindromic_Substring().execute();
         new _10_Regular_Expression_Matching().execute();
+        new _70_Climbing_Stairs().execute();
     }
 
     private static void runLinkedList() {
