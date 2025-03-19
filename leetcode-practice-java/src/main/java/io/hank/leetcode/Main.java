@@ -111,6 +111,7 @@ public class Main {
         new _10_Regular_Expression_Matching().execute();
         new _70_Climbing_Stairs().execute();
         new _198_House_Robber().execute();
+        new _64_Min_Path_Sum().execute();
     }
 
     private static void runLinkedList() {
