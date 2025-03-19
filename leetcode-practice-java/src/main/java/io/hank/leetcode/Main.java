@@ -113,6 +113,7 @@ public class Main {
         new _198_House_Robber().execute();
         new _64_Min_Path_Sum().execute();
         new _62_Unique_Paths().execute();
+        new _303_Range_Sum_Query_Immutable().execute();
     }
 
     private static void runLinkedList() {
