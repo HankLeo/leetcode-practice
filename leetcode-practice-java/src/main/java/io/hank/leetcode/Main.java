@@ -112,6 +112,7 @@ public class Main {
         new _70_Climbing_Stairs().execute();
         new _198_House_Robber().execute();
         new _64_Min_Path_Sum().execute();
+        new _62_Unique_Paths().execute();
     }
 
     private static void runLinkedList() {
