@@ -114,6 +114,7 @@ public class Main {
         new _64_Min_Path_Sum().execute();
         new _62_Unique_Paths().execute();
         new _303_Range_Sum_Query_Immutable().execute();
+        new _413_Arithmetic_Slices().execute();
     }
 
     private static void runLinkedList() {
