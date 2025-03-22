@@ -117,6 +117,7 @@ public class Main {
         new _62_Unique_Paths().execute();
         new _303_Range_Sum_Query_Immutable().execute();
         new _413_Arithmetic_Slices().execute();
+        new _91_Decode_Ways().execute();
     }
 
     private static void runMath() {
