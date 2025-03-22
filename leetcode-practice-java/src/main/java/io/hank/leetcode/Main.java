@@ -58,6 +58,7 @@ public class Main {
         new _665_Non_decreasing_Array().execute();
         new _53_Maximum_Subarray().execute();
         new _763_Partition_Labels().execute();
+        new _646_Max_Pair_Chain_Length().execute();
     }
 
     private static void runBinarySearch() {
