@@ -14,6 +14,7 @@ public class Main {
         runSearch();
         runBacktrack();
         runDP();
+        runMath();
         runLinkedList();
     }
 
@@ -107,6 +108,7 @@ public class Main {
     }
 
     private static void runDP() {
+        System.out.println("\n******** DP *******");
         new _5_Longest_Palindromic_Substring().execute();
         new _10_Regular_Expression_Matching().execute();
         new _70_Climbing_Stairs().execute();
@@ -117,7 +119,13 @@ public class Main {
         new _413_Arithmetic_Slices().execute();
     }
 
+    private static void runMath() {
+        System.out.println("\n******** Math *******");
+        new _343_Integer_Break().execute();
+    }
+
     private static void runLinkedList() {
+        System.out.println("\n******** LinkedList *******");
         new _2_Add_Two_Numbers().execute();
     }
 }
