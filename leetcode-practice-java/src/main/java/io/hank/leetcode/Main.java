@@ -120,6 +120,7 @@ public class Main {
         new _413_Arithmetic_Slices().execute();
         new _91_Decode_Ways().execute();
         new _300_Longest_Increasing_Subsequence().execute();
+        new _376_Wiggle_Subsequence().execute();
     }
 
     private static void runMath() {
