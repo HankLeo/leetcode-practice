@@ -121,6 +121,7 @@ public class Main {
         new _91_Decode_Ways().execute();
         new _300_Longest_Increasing_Subsequence().execute();
         new _376_Wiggle_Subsequence().execute();
+        new _1143_Longest_Common_Subsequence().execute();
     }
 
     private static void runMath() {
