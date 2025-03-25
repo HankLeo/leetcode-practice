@@ -122,7 +122,9 @@ public class Main {
         new _300_Longest_Increasing_Subsequence().execute();
         new _376_Wiggle_Subsequence().execute();
         new _1143_Longest_Common_Subsequence().execute();
+        // stock buy and sell
         new _309_Buy_Sell_Stock_with_Cooldown().execute();
+        new _714_Buy_Sell_Stock_with_Fee().execute();
     }
 
     private static void runMath() {
