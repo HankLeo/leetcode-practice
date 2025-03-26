@@ -1,5 +1,7 @@
 package io.hank.leetcode.practices;
 
+import io.hank.leetcode.annotations.*;
+
 import java.util.Arrays;
 
 /**
@@ -33,6 +35,9 @@ import java.util.Arrays;
  */
 public class _188_Best_Buy_Sell_Stock_with_K_Times extends LeetcodeProblemSolution {
 
+    @Topic({TopicType.DP, TopicType.GREEDY})
+    @TimeComplexity(ComplexityType.O_KN)
+    @SpaceComplexity(ComplexityType.O_K)
     public int maxProfit(int k, int[] prices) {
         if (prices.length <= 1) {
             return 0;
