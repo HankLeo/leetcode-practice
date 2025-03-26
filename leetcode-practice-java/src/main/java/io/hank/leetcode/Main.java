@@ -125,6 +125,7 @@ public class Main {
         // stock buy and sell
         new _309_Buy_Sell_Stock_with_Cooldown().execute();
         new _714_Buy_Sell_Stock_with_Fee().execute();
+        new _123_Best_Buy_Sell_Stock_with_2_Times().execute();
     }
 
     private static void runMath() {
