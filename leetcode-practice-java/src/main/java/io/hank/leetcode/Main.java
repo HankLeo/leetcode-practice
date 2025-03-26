@@ -123,6 +123,7 @@ public class Main {
         new _376_Wiggle_Subsequence().execute();
         new _1143_Longest_Common_Subsequence().execute();
         new _583_Delete_Operation_for_Two_Strings().execute();
+        new _72_Edit_Distance().execute();
         // stock buy and sell
         new _309_Buy_Sell_Stock_with_Cooldown().execute();
         new _714_Buy_Sell_Stock_with_Fee().execute();
@@ -133,6 +134,7 @@ public class Main {
     private static void runMath() {
         System.out.println("\n******** Math *******");
         new _343_Integer_Break().execute();
+        new _650_2_Keys_Keyboard().execute();
     }
 
     private static void runLinkedList() {
