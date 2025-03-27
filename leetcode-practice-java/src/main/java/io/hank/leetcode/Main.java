@@ -129,6 +129,8 @@ public class Main {
         new _714_Buy_Sell_Stock_with_Fee().execute();
         new _123_Best_Buy_Sell_Stock_with_2_Times().execute();
         new _188_Best_Buy_Sell_Stock_with_K_Times().execute();
+        // 0-1 knapsack
+        new _416_Partition_Equal_Subset_Sum().execute();
     }
 
     private static void runMath() {
