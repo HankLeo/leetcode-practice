@@ -57,9 +57,7 @@ public class _518_Coin_Change_II extends LeetcodeProblemSolution {
             if (coin <= amount) {
                 dp[coin]++;
                 for (int i = coin; i <= amount; i++) {
-                    if (dp[i - coin] != 0) {
-                        dp[i] += dp[i - coin];
-                    }
+                    dp[i] += dp[i - coin];
                 }
             }
         }

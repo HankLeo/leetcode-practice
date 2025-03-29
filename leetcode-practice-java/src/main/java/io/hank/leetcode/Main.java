@@ -135,6 +135,8 @@ public class Main {
         new _474_Ones_and_Zeroes().execute();
         new _322_Coin_Change().execute();
         new _518_Coin_Change_II().execute();
+        new _139_Word_Break().execute();
+        new _377_Combination_Sum_IV().execute();
     }
 
     private static void runMath() {
