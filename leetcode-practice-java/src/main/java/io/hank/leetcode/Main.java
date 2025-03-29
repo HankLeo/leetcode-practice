@@ -131,6 +131,9 @@ public class Main {
         new _188_Best_Buy_Sell_Stock_with_K_Times().execute();
         // 0-1 knapsack
         new _416_Partition_Equal_Subset_Sum().execute();
+        new _474_Ones_and_Zeroes().execute();
+        new _322_Coin_Change().execute();
+        new _518_Coin_Change_II().execute();
     }
 
     private static void runMath() {
