@@ -150,5 +150,6 @@ public class Main {
         new _2_Add_Two_Numbers().execute();
         new _160_Intersection_of_Two_LinkedLists().execute();
         new _206_Reverse_LinkedList().execute();
+        new _21_Merge_Two_Sorted_Lists().execute();
     }
 }

@@ -66,7 +66,7 @@ import io.hank.leetcode.annotations.*;
  */
 public class _160_Intersection_of_Two_LinkedLists extends LeetcodeProblemSolution {
 
-    @Topic(TopicType.LINKED_LIST)
+    @Topic({TopicType.LINKED_LIST, TopicType.TWO_POINTER})
     @TimeComplexity(ComplexityType.O_N)
     @SpaceComplexity(ComplexityType.O_1)
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {

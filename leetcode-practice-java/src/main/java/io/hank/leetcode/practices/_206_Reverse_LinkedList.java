@@ -31,7 +31,7 @@ import io.hank.leetcode.annotations.*;
  */
 public class _206_Reverse_LinkedList extends LeetcodeProblemSolution {
 
-    @Topic(TopicType.LINKED_LIST)
+    @Topic({TopicType.LINKED_LIST, TopicType.TWO_POINTER})
     @TimeComplexity(ComplexityType.O_N)
     @SpaceComplexity(ComplexityType.O_1)
     public ListNode reverseListByLoop(ListNode head) {
@@ -45,7 +45,7 @@ public class _206_Reverse_LinkedList extends LeetcodeProblemSolution {
         return result.next;
     }
 
-    @Topic(TopicType.LINKED_LIST)
+    @Topic({TopicType.LINKED_LIST, TopicType.RECURSION})
     @TimeComplexity(ComplexityType.O_N)
     @SpaceComplexity(ComplexityType.O_N)
     public ListNode reverseListByRecursion(ListNode head) {
