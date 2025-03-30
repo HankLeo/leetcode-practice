@@ -148,5 +148,7 @@ public class Main {
     private static void runLinkedList() {
         System.out.println("\n******** LinkedList *******");
         new _2_Add_Two_Numbers().execute();
+        new _160_Intersection_of_Two_LinkedLists().execute();
+        new _206_Reverse_LinkedList().execute();
     }
 }
