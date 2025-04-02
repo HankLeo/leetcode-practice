@@ -1,10 +1,8 @@
 package io.hank.leetcode.practices;
 
-import java.util.Arrays;
+import io.hank.leetcode.annotations.*;
 
-import io.hank.leetcode.annotations.ComplexityType;
-import io.hank.leetcode.annotations.SpaceComplexity;
-import io.hank.leetcode.annotations.TimeComplexity;
+import java.util.Arrays;
 
 /**
  * The string "PAYPALISHIRING" is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)
@@ -46,6 +44,7 @@ import io.hank.leetcode.annotations.TimeComplexity;
  */
 public class _6_Zigzag_Conversion extends LeetcodeProblemSolution {
 
+    @Topic(TopicType.STRING)
     @TimeComplexity(ComplexityType.O_N)
     @SpaceComplexity(ComplexityType.O_MIN_M_N)
     String convert(String s, int numRows) {

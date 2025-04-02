@@ -1,8 +1,6 @@
 package io.hank.leetcode.practices;
 
-import io.hank.leetcode.annotations.ComplexityType;
-import io.hank.leetcode.annotations.SpaceComplexity;
-import io.hank.leetcode.annotations.TimeComplexity;
+import io.hank.leetcode.annotations.*;
 
 /**
  * <pre>
@@ -30,6 +28,7 @@ import io.hank.leetcode.annotations.TimeComplexity;
  */
 public class _9_Palindrome_Number extends LeetcodeProblemSolution {
 
+    @Topic(TopicType.MATH)
     @TimeComplexity(ComplexityType.O_LOG_N)
     @SpaceComplexity(ComplexityType.O_1)
     boolean isPalindrome(int x) {

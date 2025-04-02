@@ -1,5 +1,7 @@
 package io.hank.leetcode.practices;
 
+import io.hank.leetcode.annotations.*;
+
 /**
  * <pre>
  * Seven different symbols represent Roman numerals with the following values:
@@ -64,6 +66,10 @@ package io.hank.leetcode.practices;
  * </pre>
  */
 public class _12_Integer_to_Roman extends LeetcodeProblemSolution {
+
+    @Topic({TopicType.MATH, TopicType.STRING})
+    @TimeComplexity(ComplexityType.O_1)
+    @SpaceComplexity(ComplexityType.O_1)
     String intToRoman(int num) {
         int[] nums = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
         String[] symbols = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};

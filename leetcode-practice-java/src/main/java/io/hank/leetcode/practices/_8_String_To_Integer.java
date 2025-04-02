@@ -1,5 +1,7 @@
 package io.hank.leetcode.practices;
 
+import io.hank.leetcode.annotations.*;
+
 /**
  * <pre>
  * Implement the myAtoi(string s) function, which converts a string to a 32-bit signed integer.
@@ -95,6 +97,9 @@ package io.hank.leetcode.practices;
  */
 public class _8_String_To_Integer extends LeetcodeProblemSolution {
 
+    @Topic(TopicType.STRING)
+    @TimeComplexity(ComplexityType.O_N)
+    @SpaceComplexity(ComplexityType.O_1)
     int myAtoi(String s) {
         if (s == null) {
             return 0;

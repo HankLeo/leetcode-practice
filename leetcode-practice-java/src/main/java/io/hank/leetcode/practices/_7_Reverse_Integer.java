@@ -1,5 +1,7 @@
 package io.hank.leetcode.practices;
 
+import io.hank.leetcode.annotations.*;
+
 /**
  * <pre>
  * Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-2^31, 2^31 - 1], then return 0.
@@ -23,6 +25,10 @@ package io.hank.leetcode.practices;
  * </pre>
  */
 public class _7_Reverse_Integer extends LeetcodeProblemSolution {
+
+    @Topic(TopicType.MATH)
+    @TimeComplexity(ComplexityType.O_N)
+    @SpaceComplexity(ComplexityType.O_1)
     int reverse(int x) {
         if (x == 0) {
             return x;

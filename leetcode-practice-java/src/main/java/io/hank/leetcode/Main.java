@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello, Leetcode!");
         runHash();
+        runString();
         runTwoPointer();
         runSort();
         runGreedy();
@@ -24,6 +25,14 @@ public class Main {
         new _3_Longest_Substring_Without_Repeating().execute();
     }
 
+    private static void runString() {
+        new _6_Zigzag_Conversion().execute();
+        new _8_String_To_Integer().execute();
+        new _12_Integer_to_Roman().execute();
+        new _13_Roman_to_Integer().execute();
+        new _14_Longest_Common_Prefix().execute();
+    }
+
     private static void runTwoPointer() {
         System.out.println("\n******** Two Pointer *******");
         new _167_Two_Sum_II_SortedArray().execute();
@@ -35,6 +44,7 @@ public class Main {
         new _524_Longest_Word_in_Dictionary_through_Deleting().execute();
         new _15_3Sum().execute();
         new _16_3Sum_Closest().execute();
+        new _11_Container_With_Most_Water().execute();
     }
 
     private static void runSort() {
@@ -143,6 +153,8 @@ public class Main {
         System.out.println("\n******** Math *******");
         new _343_Integer_Break().execute();
         new _650_2_Keys_Keyboard().execute();
+        new _7_Reverse_Integer().execute();
+        new _9_Palindrome_Number().execute();
     }
 
     private static void runLinkedList() {
@@ -157,5 +169,6 @@ public class Main {
         new _445_Add_Two_Numbers_II().execute();
         new _234_Palindrome_Linked_List().execute();
         new _725_Split_Linked_List_in_Parts().execute();
+        new _328_Odd_Even_Linked_List().execute();
     }
 }
