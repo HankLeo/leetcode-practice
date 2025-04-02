@@ -155,5 +155,6 @@ public class Main {
         new _19_Remove_Nth_Node_From_End_of_List().execute();
         new _24_Swap_Nodes_in_Pairs().execute();
         new _445_Add_Two_Numbers_II().execute();
+        new _234_Palindrome_Linked_List().execute();
     }
 }
