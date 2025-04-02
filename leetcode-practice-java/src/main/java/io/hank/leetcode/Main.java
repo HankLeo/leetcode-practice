@@ -152,5 +152,6 @@ public class Main {
         new _206_Reverse_LinkedList().execute();
         new _21_Merge_Two_Sorted_Lists().execute();
         new _83_Remove_Duplicates_from_Sorted_List().execute();
+        new _19_Remove_Nth_Node_From_End_of_List().execute();
     }
 }
