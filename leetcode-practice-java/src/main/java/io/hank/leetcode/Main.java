@@ -156,5 +156,6 @@ public class Main {
         new _24_Swap_Nodes_in_Pairs().execute();
         new _445_Add_Two_Numbers_II().execute();
         new _234_Palindrome_Linked_List().execute();
+        new _725_Split_Linked_List_in_Parts().execute();
     }
 }
