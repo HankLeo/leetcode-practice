@@ -68,10 +68,4 @@ public class _21_Merge_Two_Sorted_Lists extends LeetcodeProblemSolution {
         }
         return head.next;
     }
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-        ListNode() {}
-    }
 }

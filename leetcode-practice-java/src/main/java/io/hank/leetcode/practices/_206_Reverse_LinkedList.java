@@ -57,12 +57,4 @@ public class _206_Reverse_LinkedList extends LeetcodeProblemSolution {
         head.next = null;
         return result;
     }
-
-    public static class ListNode {
-        int val;
-        ListNode next;
-        ListNode() {}
-        ListNode(int val) { this.val = val; }
-        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
-    }
 }
