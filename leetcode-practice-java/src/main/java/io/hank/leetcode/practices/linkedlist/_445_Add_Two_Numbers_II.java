@@ -1,6 +1,8 @@
-package io.hank.leetcode.practices;
+package io.hank.leetcode.practices.linkedlist;
 
 import io.hank.leetcode.annotations.*;
+import io.hank.leetcode.model.ListNode;
+import io.hank.leetcode.practices.LeetcodeProblemSolution;
 
 import java.util.LinkedList;
 

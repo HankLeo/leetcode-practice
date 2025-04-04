@@ -1,5 +1,6 @@
 package io.hank.leetcode.practices;
 
+import io.hank.leetcode.practices.string._8_String_To_Integer;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

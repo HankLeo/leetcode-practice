@@ -1,5 +1,6 @@
 package io.hank.leetcode.practices;
 
+import io.hank.leetcode.practices.string._6_Zigzag_Conversion;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;

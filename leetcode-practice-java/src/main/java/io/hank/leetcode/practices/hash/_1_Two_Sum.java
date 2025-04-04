@@ -1,10 +1,11 @@
-package io.hank.leetcode.practices;
+package io.hank.leetcode.practices.hash;
+
+import io.hank.leetcode.annotations.*;
+import io.hank.leetcode.practices.LeetcodeProblemSolution;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-
-import io.hank.leetcode.annotations.*;
 
 /**
  * Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.

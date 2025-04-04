@@ -1,36 +1,28 @@
 package io.hank.leetcode;
 
 import io.hank.leetcode.practices.*;
+import io.hank.leetcode.practices.hash.HashPractices;
+import io.hank.leetcode.practices.linkedlist.LinkedListPractices;
+import io.hank.leetcode.practices.recursion.RecursionPractices;
+import io.hank.leetcode.practices.string.StringPractices;
+import io.hank.leetcode.practices.tree.TreePractices;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello, Leetcode!");
-        runHash();
-        runString();
+        HashPractices.execute();
+        StringPractices.execute();
         runTwoPointer();
         runSort();
         runGreedy();
         runBinarySearch();
-        runRecursion();
+        RecursionPractices.execute();
         runSearch();
         runBacktrack();
         runDP();
         runMath();
-        runLinkedList();
-    }
-
-    private static void runHash() {
-        System.out.println("\n******** Hash *******");
-        new _1_Two_Sum().execute();
-        new _3_Longest_Substring_Without_Repeating().execute();
-    }
-
-    private static void runString() {
-        new _6_Zigzag_Conversion().execute();
-        new _8_String_To_Integer().execute();
-        new _12_Integer_to_Roman().execute();
-        new _13_Roman_to_Integer().execute();
-        new _14_Longest_Common_Prefix().execute();
+        LinkedListPractices.execute();
+        TreePractices.execute();
     }
 
     private static void runTwoPointer() {
@@ -83,8 +75,7 @@ public class Main {
 
     private static void runRecursion() {
         System.out.println("\n******** Recursion *******");
-        new _241_Different_Ways_Add_Parentheses().execute();
-        new _95_Unique_Binary_Search_Trees_II().execute();
+
     }
 
     private static void runSearch() {
@@ -157,18 +148,4 @@ public class Main {
         new _9_Palindrome_Number().execute();
     }
 
-    private static void runLinkedList() {
-        System.out.println("\n******** LinkedList *******");
-        new _2_Add_Two_Numbers().execute();
-        new _160_Intersection_of_Two_LinkedLists().execute();
-        new _206_Reverse_LinkedList().execute();
-        new _21_Merge_Two_Sorted_Lists().execute();
-        new _83_Remove_Duplicates_from_Sorted_List().execute();
-        new _19_Remove_Nth_Node_From_End_of_List().execute();
-        new _24_Swap_Nodes_in_Pairs().execute();
-        new _445_Add_Two_Numbers_II().execute();
-        new _234_Palindrome_Linked_List().execute();
-        new _725_Split_Linked_List_in_Parts().execute();
-        new _328_Odd_Even_Linked_List().execute();
-    }
 }

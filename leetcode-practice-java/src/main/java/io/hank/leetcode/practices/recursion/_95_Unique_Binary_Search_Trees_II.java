@@ -1,10 +1,11 @@
-package io.hank.leetcode.practices;
-
-import java.util.ArrayList;
-import java.util.List;
+package io.hank.leetcode.practices.recursion;
 
 import io.hank.leetcode.annotations.Topic;
 import io.hank.leetcode.annotations.TopicType;
+import io.hank.leetcode.practices.LeetcodeProblemSolution;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * <pre>

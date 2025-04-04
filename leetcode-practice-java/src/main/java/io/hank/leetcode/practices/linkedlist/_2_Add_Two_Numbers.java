@@ -1,7 +1,9 @@
-package io.hank.leetcode.practices;
+package io.hank.leetcode.practices.linkedlist;
 
 import io.hank.leetcode.annotations.Topic;
 import io.hank.leetcode.annotations.TopicType;
+import io.hank.leetcode.model.ListNode;
+import io.hank.leetcode.practices.LeetcodeProblemSolution;
 
 /**
  * You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.

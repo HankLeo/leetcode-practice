@@ -1,7 +1,8 @@
-package io.hank.leetcode.practices;
+package io.hank.leetcode.practices.hash;
 
 import io.hank.leetcode.annotations.Topic;
 import io.hank.leetcode.annotations.TopicType;
+import io.hank.leetcode.practices.LeetcodeProblemSolution;
 
 import java.util.Arrays;
 

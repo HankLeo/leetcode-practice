@@ -1,6 +1,7 @@
-package io.hank.leetcode.practices;
+package io.hank.leetcode.practices.string;
 
 import io.hank.leetcode.annotations.*;
+import io.hank.leetcode.practices.LeetcodeProblemSolution;
 
 /**
  * <pre>
@@ -54,7 +55,7 @@ public class _13_Roman_to_Integer extends LeetcodeProblemSolution {
     @Topic({TopicType.MATH, TopicType.STRING})
     @TimeComplexity(ComplexityType.O_N)
     @SpaceComplexity(ComplexityType.O_1)
-    int romanToInt(String s) {
+    public int romanToInt(String s) {
         int answer = 0, number = 0, prev = 0;
 
         for (int i = s.length() - 1; i >= 0; i--) {

@@ -1,6 +1,7 @@
-package io.hank.leetcode.practices;
+package io.hank.leetcode.practices.string;
 
 import io.hank.leetcode.annotations.*;
+import io.hank.leetcode.practices.LeetcodeProblemSolution;
 
 /**
  * <pre>
@@ -100,7 +101,7 @@ public class _8_String_To_Integer extends LeetcodeProblemSolution {
     @Topic(TopicType.STRING)
     @TimeComplexity(ComplexityType.O_N)
     @SpaceComplexity(ComplexityType.O_1)
-    int myAtoi(String s) {
+    public int myAtoi(String s) {
         if (s == null) {
             return 0;
         }

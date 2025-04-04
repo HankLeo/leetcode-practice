@@ -1,6 +1,7 @@
-package io.hank.leetcode.practices;
+package io.hank.leetcode.practices.string;
 
 import io.hank.leetcode.annotations.*;
+import io.hank.leetcode.practices.LeetcodeProblemSolution;
 
 /**
  * <pre>
@@ -33,7 +34,7 @@ public class _14_Longest_Common_Prefix extends LeetcodeProblemSolution {
     @Topic(TopicType.STRING)
     @TimeComplexity(ComplexityType.O_MN)
     @SpaceComplexity(ComplexityType.O_1)
-    String longestCommonPrefix(String[] v) {
+    public String longestCommonPrefix(String[] v) {
         if (v == null || v.length == 0) {
             return "";
         }

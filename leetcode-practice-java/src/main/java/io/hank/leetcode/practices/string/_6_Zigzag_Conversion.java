@@ -1,6 +1,7 @@
-package io.hank.leetcode.practices;
+package io.hank.leetcode.practices.string;
 
 import io.hank.leetcode.annotations.*;
+import io.hank.leetcode.practices.LeetcodeProblemSolution;
 
 import java.util.Arrays;
 
@@ -47,7 +48,7 @@ public class _6_Zigzag_Conversion extends LeetcodeProblemSolution {
     @Topic(TopicType.STRING)
     @TimeComplexity(ComplexityType.O_N)
     @SpaceComplexity(ComplexityType.O_MIN_M_N)
-    String convert(String s, int numRows) {
+    public String convert(String s, int numRows) {
         if (numRows < 2) {
             return s;
         }
