@@ -9,5 +9,6 @@ public final class TreePractices {
         new _671_Second_Min_Node_In_Binary_Tree().execute();
         new _112_Path_Sum().execute();
         new _617_Merge_Two_Binary_Trees().execute();
+        new _437_Path_Sum_III().execute();
     }
 }

@@ -1,6 +1,7 @@
-package io.hank.leetcode.practices;
+package io.hank.leetcode.practices.search;
 
 import io.hank.leetcode.annotations.*;
+import io.hank.leetcode.practices.LeetcodeProblemSolution;
 
 import java.util.LinkedList;
 import java.util.Queue;

@@ -1,6 +1,7 @@
-package io.hank.leetcode.practices;
+package io.hank.leetcode.practices.search;
 
 import io.hank.leetcode.annotations.*;
+import io.hank.leetcode.practices.LeetcodeProblemSolution;
 
 /**
  * <pre>
@@ -40,7 +41,7 @@ import io.hank.leetcode.annotations.*;
  */
 public class _200_Number_of_Islands extends LeetcodeProblemSolution {
     private static final int[][] dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
-    private int rows =0, cols = 0;
+    private int rows = 0, cols = 0;
 
     @Topic({TopicType.DFS, TopicType.RECURSION})
     @TimeComplexity(ComplexityType.O_MN)
@@ -65,7 +66,7 @@ public class _200_Number_of_Islands extends LeetcodeProblemSolution {
             return;
         }
         grid[i][j] = '0';
-        for (int[] d: dirs) {
+        for (int[] d : dirs) {
             dfs(grid, i + d[0], j + d[1]);
         }
     }

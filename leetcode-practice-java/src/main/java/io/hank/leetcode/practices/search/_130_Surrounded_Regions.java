@@ -1,6 +1,7 @@
-package io.hank.leetcode.practices;
+package io.hank.leetcode.practices.search;
 
 import io.hank.leetcode.annotations.*;
+import io.hank.leetcode.practices.LeetcodeProblemSolution;
 
 /**
  * <pre>
@@ -42,7 +43,7 @@ import io.hank.leetcode.annotations.*;
  */
 public class _130_Surrounded_Regions extends LeetcodeProblemSolution {
 
-    private int[][] dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
+    private final int[][] dirs = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
 
     @Topic({TopicType.DFS, TopicType.RECURSION})
     @TimeComplexity(ComplexityType.O_MN)
@@ -85,7 +86,7 @@ public class _130_Surrounded_Regions extends LeetcodeProblemSolution {
             return;
         }
         board[i][j] = 'T';
-        for (int[] d: dirs) {
+        for (int[] d : dirs) {
             dfs(board, i + d[0], j + d[1]);
         }
     }
