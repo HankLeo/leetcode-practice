@@ -12,5 +12,6 @@ public final class TreePractices {
         new _437_Path_Sum_III().execute();
         new _572_Subtree_of_Another_Tree().execute();
         new _101_Symmetric_Tree().execute();
+        new _111_Min_Depth_of_Binary_Tree().execute();
     }
 }
