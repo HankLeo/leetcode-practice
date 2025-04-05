@@ -10,5 +10,7 @@ public final class TreePractices {
         new _112_Path_Sum().execute();
         new _617_Merge_Two_Binary_Trees().execute();
         new _437_Path_Sum_III().execute();
+        new _572_Subtree_of_Another_Tree().execute();
+        new _101_Symmetric_Tree().execute();
     }
 }
