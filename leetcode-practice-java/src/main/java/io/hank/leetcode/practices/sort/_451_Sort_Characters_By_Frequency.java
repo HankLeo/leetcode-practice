@@ -1,11 +1,12 @@
-package io.hank.leetcode.practices;
+package io.hank.leetcode.practices.sort;
+
+import io.hank.leetcode.annotations.*;
+import io.hank.leetcode.practices.LeetcodeProblemSolution;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import io.hank.leetcode.annotations.*;
 
 public class _451_Sort_Characters_By_Frequency extends LeetcodeProblemSolution {
 

@@ -1,10 +1,11 @@
-package io.hank.leetcode.practices;
+package io.hank.leetcode.practices.twopointer;
+
+import io.hank.leetcode.annotations.*;
+import io.hank.leetcode.practices.LeetcodeProblemSolution;
 
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
-
-import io.hank.leetcode.annotations.*;
 
 /**
  * <pre>

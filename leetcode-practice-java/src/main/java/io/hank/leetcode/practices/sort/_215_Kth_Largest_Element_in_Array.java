@@ -1,9 +1,10 @@
-package io.hank.leetcode.practices;
+package io.hank.leetcode.practices.sort;
+
+import io.hank.leetcode.annotations.*;
+import io.hank.leetcode.practices.LeetcodeProblemSolution;
 
 import java.util.Arrays;
 import java.util.PriorityQueue;
-
-import io.hank.leetcode.annotations.*;
 
 /**
  * <pre>

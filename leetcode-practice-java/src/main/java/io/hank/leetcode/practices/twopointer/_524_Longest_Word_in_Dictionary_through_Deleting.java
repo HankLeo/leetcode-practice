@@ -1,8 +1,9 @@
-package io.hank.leetcode.practices;
-
-import java.util.List;
+package io.hank.leetcode.practices.twopointer;
 
 import io.hank.leetcode.annotations.*;
+import io.hank.leetcode.practices.LeetcodeProblemSolution;
+
+import java.util.List;
 
 /**
  * <pre>

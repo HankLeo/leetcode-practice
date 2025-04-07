@@ -5,16 +5,18 @@ import io.hank.leetcode.practices.hash.HashPractices;
 import io.hank.leetcode.practices.linkedlist.LinkedListPractices;
 import io.hank.leetcode.practices.recursion.RecursionPractices;
 import io.hank.leetcode.practices.search.SearchPractices;
+import io.hank.leetcode.practices.sort.SortPractices;
 import io.hank.leetcode.practices.string.StringPractices;
 import io.hank.leetcode.practices.tree.TreePractices;
+import io.hank.leetcode.practices.twopointer.TwoPointerPractices;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello, Leetcode!");
         HashPractices.execute();
         StringPractices.execute();
-        runTwoPointer();
-        runSort();
+        TwoPointerPractices.execute();
+        SortPractices.execute();
         runGreedy();
         runBinarySearch();
         RecursionPractices.execute();
@@ -24,28 +26,6 @@ public class Main {
         runMath();
         LinkedListPractices.execute();
         TreePractices.execute();
-    }
-
-    private static void runTwoPointer() {
-        System.out.println("\n******** Two Pointer *******");
-        new _167_Two_Sum_II_SortedArray().execute();
-        new _633_Sum_of_Square_Numbers().execute();
-        new _345_Reverse_Vowels_of_String().execute();
-        new _680_Valid_Palindrome_II().execute();
-        new _88_Merge_Sorted_Array().execute();
-        new _141_Linked_List_Cycle().execute();
-        new _524_Longest_Word_in_Dictionary_through_Deleting().execute();
-        new _15_3Sum().execute();
-        new _16_3Sum_Closest().execute();
-        new _11_Container_With_Most_Water().execute();
-    }
-
-    private static void runSort() {
-        System.out.println("\n******** Sort *******");
-        new _215_Kth_Largest_Element_in_Array().execute();
-        new _347_TopK_Frequent_Elements().execute();
-        new _451_Sort_Characters_By_Frequency().execute();
-        new _75_Sort_Colors().execute();
     }
 
     private static void runGreedy() {
