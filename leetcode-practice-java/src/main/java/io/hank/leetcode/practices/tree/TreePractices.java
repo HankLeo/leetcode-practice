@@ -20,5 +20,7 @@ public final class TreePractices {
         // BFS
         new _637_Average_of_Levels_in_Binary_Tree().execute();
         new _513_Find_Bottom_Left_Tree_Value().execute();
+        // DFS
+        new _144_Binary_Tree_Preorder_Traversal().execute();
     }
 }
