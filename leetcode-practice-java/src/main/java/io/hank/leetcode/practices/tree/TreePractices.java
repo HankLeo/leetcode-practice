@@ -22,5 +22,6 @@ public final class TreePractices {
         new _513_Find_Bottom_Left_Tree_Value().execute();
         // DFS
         new _144_Binary_Tree_Preorder_Traversal().execute();
+        new _145_Binary_Tree_Postorder_Traversal().execute();
     }
 }
