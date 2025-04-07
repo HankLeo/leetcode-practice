@@ -23,5 +23,6 @@ public final class TreePractices {
         // DFS
         new _144_Binary_Tree_Preorder_Traversal().execute();
         new _145_Binary_Tree_Postorder_Traversal().execute();
+        new _94_Binary_Tree_Inorder_Traversal().execute();
     }
 }
