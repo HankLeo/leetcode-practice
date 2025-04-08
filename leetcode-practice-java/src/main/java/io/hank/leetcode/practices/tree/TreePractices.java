@@ -24,6 +24,9 @@ public final class TreePractices {
         new _144_Binary_Tree_Preorder_Traversal().execute();
         new _145_Binary_Tree_Postorder_Traversal().execute();
         new _94_Binary_Tree_Inorder_Traversal().execute();
+        // BST
+        new _669_Trim_a_Binary_Search_Tree().execute();
+        new _230_Kth_Smallest_Element_in_a_BST().execute();
         // Trie
         new _208_Implement_Trie().execute();
         new _677_Map_Sum_Pairs().execute();
