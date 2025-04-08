@@ -43,7 +43,7 @@ import io.hank.leetcode.practices.LeetcodeProblemSolution;
  */
 public class _208_Implement_Trie extends LeetcodeProblemSolution {
 
-    @Topic(TopicType.TREE)
+    @Topic({TopicType.TREE, TopicType.TRIE})
     public void implementTrie() {
         Trie trie = new Trie();
         trie.insert("apple");
@@ -51,6 +51,12 @@ public class _208_Implement_Trie extends LeetcodeProblemSolution {
         System.out.println(trie.search("app"));     // return False
         System.out.println(trie.startsWith("app")); // return True
         trie.insert("app");
+    }
+
+    @Override
+    public void execute() {
+        super.execute();
+        implementTrie();
     }
 }
 

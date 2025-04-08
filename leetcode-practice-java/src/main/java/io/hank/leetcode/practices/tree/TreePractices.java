@@ -26,5 +26,6 @@ public final class TreePractices {
         new _94_Binary_Tree_Inorder_Traversal().execute();
         // Trie
         new _208_Implement_Trie().execute();
+        new _677_Map_Sum_Pairs().execute();
     }
 }

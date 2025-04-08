@@ -4,6 +4,7 @@ public enum TopicType {
     STRING("String"),
     LINKED_LIST("Linked List"),
     TREE("Tree"),
+    TRIE("Trie"),
 
     HASH("Hash"),
     MATH("Math"),
