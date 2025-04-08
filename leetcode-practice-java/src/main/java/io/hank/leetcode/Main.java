@@ -1,8 +1,11 @@
 package io.hank.leetcode;
 
 import io.hank.leetcode.practices.*;
+import io.hank.leetcode.practices.binarysearch.BinarySearchPractices;
+import io.hank.leetcode.practices.greedy.GreedyPractices;
 import io.hank.leetcode.practices.hash.HashPractices;
 import io.hank.leetcode.practices.linkedlist.LinkedListPractices;
+import io.hank.leetcode.practices.math.MathPractices;
 import io.hank.leetcode.practices.recursion.RecursionPractices;
 import io.hank.leetcode.practices.search.SearchPractices;
 import io.hank.leetcode.practices.sort.SortPractices;
@@ -17,41 +20,15 @@ public class Main {
         StringPractices.execute();
         TwoPointerPractices.execute();
         SortPractices.execute();
-        runGreedy();
-        runBinarySearch();
+        BinarySearchPractices.execute();
+        GreedyPractices.execute();
         RecursionPractices.execute();
         SearchPractices.execute();
         runBacktrack();
         runDP();
-        runMath();
+        MathPractices.execute();
         LinkedListPractices.execute();
         TreePractices.execute();
-    }
-
-    private static void runGreedy() {
-        System.out.println("\n******** Greedy *******");
-        new _455_Assign_Cookies().execute();
-        new _435_Nonoverlapping_Intervals().execute();
-        new _452_Min_Arrows_to_Burst_Balloons().execute();
-        new _406_Queue_Reconstruction_by_Height().execute();
-        new _121_Best_Time_to_Buy_and_Sell_Stock().execute();
-        new _122_Best_Time_to_Buy_and_Sell_Stock_II().execute();
-        new _605_Can_Place_Flowers().execute();
-        new _392_Is_Subsequence().execute();
-        new _665_Non_decreasing_Array().execute();
-        new _53_Maximum_Subarray().execute();
-        new _763_Partition_Labels().execute();
-        new _646_Max_Pair_Chain_Length().execute();
-    }
-
-    private static void runBinarySearch() {
-        System.out.println("\n******** Binary Search *******");
-        new _69_Sqrt_X().execute();
-        new _744_Find_Smallest_Letter_GT_Target().execute();
-        new _540_Single_Element_in_Sorted_Array().execute();
-        new _278_First_Bad_Version().execute();
-        new _34_Find_First_Last_Element_in_Sorted_Array().execute();
-        new _4_Median_of_Two_Sorted_Arrays().execute();
     }
 
     private static void runBacktrack() {
@@ -102,14 +79,6 @@ public class Main {
         new _518_Coin_Change_II().execute();
         new _139_Word_Break().execute();
         new _377_Combination_Sum_IV().execute();
-    }
-
-    private static void runMath() {
-        System.out.println("\n******** Math *******");
-        new _343_Integer_Break().execute();
-        new _650_2_Keys_Keyboard().execute();
-        new _7_Reverse_Integer().execute();
-        new _9_Palindrome_Number().execute();
     }
 
 }

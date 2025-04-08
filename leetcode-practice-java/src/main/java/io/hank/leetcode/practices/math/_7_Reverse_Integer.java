@@ -1,6 +1,7 @@
-package io.hank.leetcode.practices;
+package io.hank.leetcode.practices.math;
 
 import io.hank.leetcode.annotations.*;
+import io.hank.leetcode.practices.LeetcodeProblemSolution;
 
 /**
  * <pre>
@@ -29,7 +30,7 @@ public class _7_Reverse_Integer extends LeetcodeProblemSolution {
     @Topic(TopicType.MATH)
     @TimeComplexity(ComplexityType.O_N)
     @SpaceComplexity(ComplexityType.O_1)
-    int reverse(int x) {
+    public int reverse(int x) {
         if (x == 0) {
             return x;
         }

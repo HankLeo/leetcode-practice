@@ -1,6 +1,7 @@
-package io.hank.leetcode.practices;
+package io.hank.leetcode.practices.binarysearch;
 
 import io.hank.leetcode.annotations.*;
+import io.hank.leetcode.practices.LeetcodeProblemSolution;
 
 /**
  * <pre>
@@ -30,7 +31,7 @@ import io.hank.leetcode.annotations.*;
  */
 public class _69_Sqrt_X extends LeetcodeProblemSolution {
 
-    @Topic({TopicType.GREEDY, TopicType.TWO_POINTER})
+    @Topic({TopicType.BINARY_SEARCH, TopicType.TWO_POINTER})
     @TimeComplexity(ComplexityType.O_LOG_N)
     @SpaceComplexity(ComplexityType.O_1)
     int mySqrt(int x) {

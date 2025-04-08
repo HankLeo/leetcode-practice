@@ -1,6 +1,7 @@
-package io.hank.leetcode.practices;
+package io.hank.leetcode.practices.math;
 
 import io.hank.leetcode.annotations.*;
+import io.hank.leetcode.practices.LeetcodeProblemSolution;
 
 /**
  * <pre>
@@ -31,7 +32,7 @@ public class _9_Palindrome_Number extends LeetcodeProblemSolution {
     @Topic(TopicType.MATH)
     @TimeComplexity(ComplexityType.O_LOG_N)
     @SpaceComplexity(ComplexityType.O_1)
-    boolean isPalindrome(int x) {
+    public boolean isPalindrome(int x) {
         if (x < 0 || (x != 0 && x % 10 == 0)) {
             return false;
         }
