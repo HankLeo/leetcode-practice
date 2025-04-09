@@ -29,6 +29,8 @@ public final class TreePractices {
         new _230_Kth_Smallest_Element_in_a_BST().execute();
         new _538_Convert_BST_to_Greater_Tree().execute();
         new _235_Lowest_Common_Ancestor_of_BST().execute();
+        new _108_Convert_Sorted_Array_to_BST().execute();
+        new _109_Convert_Sorted_List_to_BST().execute();
         // Trie
         new _208_Implement_Trie().execute();
         new _677_Map_Sum_Pairs().execute();
