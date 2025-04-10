@@ -31,6 +31,8 @@ public final class TreePractices {
         new _235_Lowest_Common_Ancestor_of_BST().execute();
         new _108_Convert_Sorted_Array_to_BST().execute();
         new _109_Convert_Sorted_List_to_BST().execute();
+        new _653_Two_Sum_IV_Input_is_BST().execute();
+        new _530_Min_Absolute_Diff_in_BST().execute();
         // Trie
         new _208_Implement_Trie().execute();
         new _677_Map_Sum_Pairs().execute();
