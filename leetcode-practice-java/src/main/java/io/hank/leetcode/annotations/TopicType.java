@@ -6,6 +6,8 @@ public enum TopicType {
     TREE("Tree"),
     BST("Binary Search Tree"),
     TRIE("Trie"),
+    STACK("Stack"),
+    QUEUE("Queue"),
 
     HASH("Hash"),
     MATH("Math"),

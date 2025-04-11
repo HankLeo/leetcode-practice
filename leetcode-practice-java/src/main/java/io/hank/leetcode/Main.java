@@ -9,6 +9,7 @@ import io.hank.leetcode.practices.math.MathPractices;
 import io.hank.leetcode.practices.recursion.RecursionPractices;
 import io.hank.leetcode.practices.search.SearchPractices;
 import io.hank.leetcode.practices.sort.SortPractices;
+import io.hank.leetcode.practices.stackqueue.StackQueuePractices;
 import io.hank.leetcode.practices.string.StringPractices;
 import io.hank.leetcode.practices.tree.TreePractices;
 import io.hank.leetcode.practices.twopointer.TwoPointerPractices;
@@ -29,6 +30,7 @@ public class Main {
         MathPractices.execute();
         LinkedListPractices.execute();
         TreePractices.execute();
+        StackQueuePractices.execute();
     }
 
     private static void runBacktrack() {
