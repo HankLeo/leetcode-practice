@@ -1,5 +1,7 @@
 package io.hank.leetcode.practices.stackqueue;
 
+import io.hank.leetcode.annotations.Topic;
+import io.hank.leetcode.annotations.TopicType;
 import io.hank.leetcode.practices.LeetcodeProblemSolution;
 
 import java.util.Deque;
@@ -48,6 +50,7 @@ import java.util.LinkedList;
 public class _225_Implement_Stack_using_Queues extends LeetcodeProblemSolution {
 
     @Override
+    @Topic({TopicType.STACK, TopicType.QUEUE})
     public void execute() {
         super.execute();
         MyStack myStack = new MyStack();
