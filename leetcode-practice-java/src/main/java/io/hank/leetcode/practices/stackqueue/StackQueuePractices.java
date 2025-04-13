@@ -7,5 +7,7 @@ public class StackQueuePractices {
         new _225_Implement_Stack_using_Queues().execute();
         new _155_Min_Stack().execute();
         new _20_Valid_Parentheses().execute();
+        new _739_Daily_Temperatures().execute();
+        new _503_Next_Greater_Element_II().execute();
     }
 }
