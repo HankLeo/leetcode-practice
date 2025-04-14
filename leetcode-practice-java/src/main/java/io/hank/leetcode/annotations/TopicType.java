@@ -1,7 +1,10 @@
 package io.hank.leetcode.annotations;
 
 public enum TopicType {
+    HASH("Hash"),
     STRING("String"),
+    ARRAY("Array"),
+    MATRIX("Matrix"),
     LINKED_LIST("Linked List"),
     TREE("Tree"),
     BST("Binary Search Tree"),
@@ -9,9 +12,7 @@ public enum TopicType {
     STACK("Stack"),
     QUEUE("Queue"),
 
-    HASH("Hash"),
     MATH("Math"),
-    MATRIX("Matrix"),
     TWO_POINTER("Two Pointer"),
     SORT_AND_SELECTION("Sort and Selection"),
     BINARY_SEARCH("Binary Search"),

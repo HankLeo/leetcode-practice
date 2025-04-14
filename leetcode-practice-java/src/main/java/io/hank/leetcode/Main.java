@@ -1,6 +1,7 @@
 package io.hank.leetcode;
 
 import io.hank.leetcode.practices.*;
+import io.hank.leetcode.practices.arraymatrix.ArrayMatrixPractices;
 import io.hank.leetcode.practices.binarysearch.BinarySearchPractices;
 import io.hank.leetcode.practices.greedy.GreedyPractices;
 import io.hank.leetcode.practices.hash.HashPractices;
@@ -17,8 +18,7 @@ import io.hank.leetcode.practices.twopointer.TwoPointerPractices;
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello, Leetcode!");
-        HashPractices.execute();
-        StringPractices.execute();
+
         TwoPointerPractices.execute();
         SortPractices.execute();
         BinarySearchPractices.execute();
@@ -31,6 +31,9 @@ public class Main {
         LinkedListPractices.execute();
         TreePractices.execute();
         StackQueuePractices.execute();
+        HashPractices.execute();
+        StringPractices.execute();
+        ArrayMatrixPractices.execute();
     }
 
     private static void runBacktrack() {
