@@ -12,5 +12,6 @@ public class StringPractices {
         new _409_Longest_Palindrome().execute();
         new _205_Isomorphic_Strings().execute();
         new _647_Palindromic_Substrings().execute();
+        new _696_Count_Binary_Substrings().execute();
     }
 }
