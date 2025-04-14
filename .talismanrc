@@ -1,6 +1,8 @@
 fileignoreconfig:
 - filename: leetcode-practice-java/src/main/java/io/hank/leetcode/practices/_451_Sort_Characters_By_Frequency.java
   checksum: 32968a7091a37d20582ba80b5d53e2ab6effd48146ef3bc23d6c7663a8866e16
+- filename: leetcode-practice-java/src/main/java/io/hank/leetcode/practices/hash/_594_Longest_Harmonious_Subseq.java
+  checksum: cb41cb704be13a9c31847b5561f9580560be79836bbee81f848ef8c8343d245b
 - filename: leetcode-practice-java/src/main/java/io/hank/leetcode/practices/tree/_677_Map_Sum_Pairs.java
   checksum: 8befb4ea4d538564ff6aabe9594223250ebd44351148f76e8a26ba4956a151bc
 version: "1.0"
