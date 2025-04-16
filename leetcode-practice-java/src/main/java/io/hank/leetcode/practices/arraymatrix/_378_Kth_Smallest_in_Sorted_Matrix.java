@@ -1,5 +1,7 @@
 package io.hank.leetcode.practices.arraymatrix;
 
+import io.hank.leetcode.annotations.Topic;
+import io.hank.leetcode.annotations.TopicType;
 import io.hank.leetcode.practices.LeetcodeProblemSolution;
 
 /**
@@ -39,4 +41,36 @@ import io.hank.leetcode.practices.LeetcodeProblemSolution;
  * </pre>
  */
 public class _378_Kth_Smallest_in_Sorted_Matrix extends LeetcodeProblemSolution {
+
+    @Topic({TopicType.MATRIX, TopicType.BINARY_SEARCH})
+    public int kthSmallest(int[][] matrix, int k) {
+        int m = matrix.length;
+        int n = matrix[0].length;
+        int low = matrix[0][0], high = matrix[m - 1][n - 1];
+        while (low < high) {
+            int mid = low + (high - low) / 2;
+            if (isMinorCountLess(matrix, k, mid)) {
+                low = mid + 1;
+            } else {
+                high = mid;
+            }
+        }
+        return low;
+    }
+
+    private boolean isMinorCountLess(int[][] matrix, int k, int mid) {
+        int m = matrix.length;
+        int n = matrix[0].length;
+        int row = 0, col = n - 1;
+        int count = 0;
+        while (row < m && col >= 0 && count < k) {
+            if (matrix[row][col] <= mid) {
+                count += col + 1;
+                row++;
+            } else {
+                col--;
+            }
+        }
+        return count < k;
+    }
 }
