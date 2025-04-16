@@ -10,6 +10,7 @@ public enum ComplexityType {
     O_MN("O(MN)"),
     O_KN("O(KN)"),
     O_LOG_M_DIVIDE_LOG_N("O(logM/logN)"),
+    O_M_PLUS_N("O(M+N)"),
     O_MIN_M_N("O(Min(M,N))"),
     O_LOG_N("O(log(N))"),
     O_N_LOG_N("O(N*logN)"),
