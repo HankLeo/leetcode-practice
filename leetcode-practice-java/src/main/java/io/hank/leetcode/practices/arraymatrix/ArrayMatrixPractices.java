@@ -7,5 +7,6 @@ public class ArrayMatrixPractices {
         new _566_Reshape_the_Matrix().execute();
         new _240_Search_a_2D_Matrix_II().execute();
         new _378_Kth_Smallest_in_Sorted_Matrix().execute();
+        new _645_Set_Mismatch().execute();
     }
 }
