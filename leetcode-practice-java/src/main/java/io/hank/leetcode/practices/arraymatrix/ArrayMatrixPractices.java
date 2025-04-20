@@ -9,5 +9,6 @@ public class ArrayMatrixPractices {
         new _378_Kth_Smallest_in_Sorted_Matrix().execute();
         new _645_Set_Mismatch().execute();
         new _287_Find_Duplicate_Num().execute();
+        new _667_Beautiful_Arrangement_II().execute();
     }
 }
