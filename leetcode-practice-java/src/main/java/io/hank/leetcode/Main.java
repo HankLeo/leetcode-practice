@@ -3,6 +3,7 @@ package io.hank.leetcode;
 import io.hank.leetcode.practices.*;
 import io.hank.leetcode.practices.arraymatrix.ArrayMatrixPractices;
 import io.hank.leetcode.practices.binarysearch.BinarySearchPractices;
+import io.hank.leetcode.practices.graph.GraphPractices;
 import io.hank.leetcode.practices.greedy.GreedyPractices;
 import io.hank.leetcode.practices.hash.HashPractices;
 import io.hank.leetcode.practices.linkedlist.LinkedListPractices;
@@ -34,6 +35,7 @@ public class Main {
         HashPractices.execute();
         StringPractices.execute();
         ArrayMatrixPractices.execute();
+        GraphPractices.execute();
     }
 
     private static void runBacktrack() {
