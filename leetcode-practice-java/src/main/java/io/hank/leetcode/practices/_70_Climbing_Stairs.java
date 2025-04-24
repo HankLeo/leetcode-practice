@@ -42,7 +42,7 @@ public class _70_Climbing_Stairs extends LeetcodeProblemSolution {
             return n;
         }
 
-        // dp[n] = dp[n -1] + dp[n - 2]
+        // dp[n] = dp[n - 1] + dp[n - 2]
         int n_1 = 2, n_2 = 1;
         for (int i = 2; i < n; i++) {
             int cur = n_1 + n_2;
