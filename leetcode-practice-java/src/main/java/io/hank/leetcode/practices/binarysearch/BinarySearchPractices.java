@@ -10,5 +10,6 @@ public class BinarySearchPractices {
         new _278_First_Bad_Version().execute();
         new _34_Find_First_Last_Element_in_Sorted_Array().execute();
         new _4_Median_of_Two_Sorted_Arrays().execute();
+        new _153_Find_Minimum_in_Rotated_Sorted_Array().execute();
     }
 }
