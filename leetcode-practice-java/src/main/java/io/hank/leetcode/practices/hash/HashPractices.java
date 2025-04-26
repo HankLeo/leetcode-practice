@@ -8,5 +8,6 @@ public class HashPractices {
         new _217_Contains_Duplicate().execute();
         new _594_Longest_Harmonious_Subseq().execute();
         new _128_Longest_Consecutive_Seq().execute();
+        new _438_Find_All_Anagrams_In_String().execute();
     }
 }
