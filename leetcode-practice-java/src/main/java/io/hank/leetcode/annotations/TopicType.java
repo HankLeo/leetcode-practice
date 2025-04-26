@@ -14,6 +14,7 @@ public enum TopicType {
     GRAPH("Graph"),
 
     MATH("Math"),
+    BIT_MANIPULATION("Bit Manipulation"),
     TWO_POINTER("Two Pointer"),
     SORT_AND_SELECTION("Sort and Selection"),
     BINARY_SEARCH("Binary Search"),
