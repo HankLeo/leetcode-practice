@@ -69,4 +69,33 @@ public class _46_Permutations extends LeetcodeProblemSolution {
         nums[i] = nums[j];
         nums[j] = temp;
     }
+
+    @Topic({TopicType.BACKTRACK, TopicType.DFS, TopicType.RECURSION})
+    public List<List<Integer>> permute2(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+        boolean[] visited = new boolean[nums.length];
+        List<Integer> curList = new ArrayList<>();
+        backtrack2(nums, visited, curList, res);
+        return res;
+    }
+
+    private void backtrack2(int[] nums, boolean[] visited, List<Integer> curList, List<List<Integer>> res) {
+        if (curList.size() == nums.length) {
+            res.add(new ArrayList<>(curList));
+        }
+
+        // loop all start points or recursive points
+        for (int i = 0; i < nums.length; i++) {
+            if (!visited[i]) {
+                curList.add(nums[i]);
+                // mark
+                visited[i] = true;
+                // recursion
+                backtrack2(nums, visited, curList, res);
+                // backtrack
+                curList.removeLast();
+                visited[i] = false;
+            }
+        }
+    }
 }
