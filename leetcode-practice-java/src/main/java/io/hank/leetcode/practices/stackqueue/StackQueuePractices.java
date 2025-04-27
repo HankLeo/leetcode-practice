@@ -9,5 +9,6 @@ public class StackQueuePractices {
         new _20_Valid_Parentheses().execute();
         new _739_Daily_Temperatures().execute();
         new _503_Next_Greater_Element_II().execute();
+        new _394_Decode_String().execute();
     }
 }
