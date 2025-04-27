@@ -8,5 +8,6 @@ public class MathPractices {
         new _650_2_Keys_Keyboard().execute();
         new _7_Reverse_Integer().execute();
         new _9_Palindrome_Number().execute();
+        new _560_Subarray_Sum_Equals_K().execute();
     }
 }

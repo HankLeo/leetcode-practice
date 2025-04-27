@@ -42,6 +42,7 @@ public class _215_Kth_Largest_Element_in_Array extends LeetcodeProblemSolution {
         return nums[nums.length - k];
     }
 
+    @Topic({TopicType.SORT_AND_SELECTION, TopicType.HEAP})
     @TimeComplexity(ComplexityType.O_N_LOG_K)
     @SpaceComplexity(ComplexityType.O_K)
     int findKthLargestByMinHeap(int[] nums, int k) {
@@ -60,6 +61,7 @@ public class _215_Kth_Largest_Element_in_Array extends LeetcodeProblemSolution {
         return minHeap.peek();
     }
 
+    @Topic(TopicType.SORT_AND_SELECTION)
     @TimeComplexity(ComplexityType.O_N)
     @SpaceComplexity(ComplexityType.O_1)
     int findKthLargestByQuickSelect(int[] nums, int k) {

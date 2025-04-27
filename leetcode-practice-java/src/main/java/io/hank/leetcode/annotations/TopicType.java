@@ -11,6 +11,7 @@ public enum TopicType {
     TRIE("Trie"),
     STACK("Stack"),
     QUEUE("Queue"),
+    HEAP("Heap"),
     GRAPH("Graph"),
 
     MATH("Math"),
