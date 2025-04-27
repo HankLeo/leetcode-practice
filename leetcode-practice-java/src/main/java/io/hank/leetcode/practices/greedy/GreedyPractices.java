@@ -3,6 +3,7 @@ package io.hank.leetcode.practices.greedy;
 public class GreedyPractices {
     public static void execute() {
         System.out.println("\n******** Greedy *******");
+        new _55_Jump_Game().execute();
         new _455_Assign_Cookies().execute();
         new _435_Nonoverlapping_Intervals().execute();
         new _452_Min_Arrows_to_Burst_Balloons().execute();
