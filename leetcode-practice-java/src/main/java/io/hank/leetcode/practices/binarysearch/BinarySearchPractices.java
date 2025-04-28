@@ -5,6 +5,7 @@ public class BinarySearchPractices {
         System.out.println("\n******** Binary Search *******");
         new _35_Search_Insert_Position().execute();
         new _69_Sqrt_X().execute();
+        new _74_Search_2D_Matrix().execute();
         new _744_Find_Smallest_Letter_GT_Target().execute();
         new _540_Single_Element_in_Sorted_Array().execute();
         new _278_First_Bad_Version().execute();
