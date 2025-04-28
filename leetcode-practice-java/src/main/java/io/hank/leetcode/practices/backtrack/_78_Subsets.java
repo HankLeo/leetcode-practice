@@ -1,7 +1,6 @@
 package io.hank.leetcode.practices.backtrack;
 
-import io.hank.leetcode.annotations.Topic;
-import io.hank.leetcode.annotations.TopicType;
+import io.hank.leetcode.annotations.*;
 import io.hank.leetcode.practices.LeetcodeProblemSolution;
 
 import java.util.ArrayList;
@@ -35,25 +34,23 @@ import java.util.List;
  */
 public class _78_Subsets extends LeetcodeProblemSolution {
 
-    @Topic(TopicType.BACKTRACK)
+    @Topic({TopicType.BACKTRACK, TopicType.DFS, TopicType.RECURSION})
+    @TimeComplexity(ComplexityType.O_2N)
+    @SpaceComplexity(ComplexityType.O_N)
     public List<List<Integer>> subsets(int[] nums) {
-        List<List<Integer>> result = new ArrayList<>();
-        for (int i = 0; i <= nums.length; i++) {
-            List<Integer> path = new ArrayList<>();
-            backtrack(nums, result, path, i, 0);
-        }
-        return result;
+        List<List<Integer>> res = new ArrayList<>();
+        List<Integer> curList = new ArrayList<>();
+        backtrack(nums, 0, curList, res);
+        return res;
     }
 
-    private void backtrack(int[] nums, List<List<Integer>> result, List<Integer> path, int k, int start) {
-        if (k == path.size()) {
-            result.add(new ArrayList<>(path));
-            return;
-        }
+    private void backtrack(int[] nums, int start, List<Integer> curList, List<List<Integer>> res) {
+        res.add(new ArrayList<>(curList));
+
         for (int i = start; i < nums.length; i++) {
-            path.add(nums[i]);
-            backtrack(nums, result, path, k, i + 1);
-            path.removeLast();
+            curList.add(nums[i]);
+            backtrack(nums, i + 1, curList, res); // 直接往后加1，替代标记
+            curList.removeLast();
         }
     }
 }
