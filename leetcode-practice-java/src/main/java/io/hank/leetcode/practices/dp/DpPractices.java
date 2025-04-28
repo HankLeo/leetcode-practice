@@ -4,6 +4,7 @@ public class DpPractices {
     public static void execute() {
         System.out.println("\n******** DP *******");
         new _118_Pascal_Triangle().execute();
+        new _152_Max_Product_Subarray().execute();
         new _5_Longest_Palindromic_Substring().execute();
         new _10_Regular_Expression_Matching().execute();
         new _70_Climbing_Stairs().execute();
