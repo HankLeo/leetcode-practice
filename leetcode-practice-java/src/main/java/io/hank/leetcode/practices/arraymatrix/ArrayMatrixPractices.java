@@ -4,6 +4,7 @@ public class ArrayMatrixPractices {
     public static void execute() {
         System.out.println("\n******** Array & Matrix ********");
         new _56_Merge_Intervals().execute();
+        new _73_Set_Matrix_Zeroes().execute();
         new _283_Move_Zeroes().execute();
         new _566_Reshape_the_Matrix().execute();
         new _485_Max_Consecutive_Ones().execute();
