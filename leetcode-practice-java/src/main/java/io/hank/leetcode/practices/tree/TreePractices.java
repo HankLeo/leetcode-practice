@@ -4,6 +4,7 @@ public final class TreePractices {
     public static void execute() {
         System.out.println("\n******** Tree ********");
         // Recursion
+        new _98_Validate_BST().execute();
         new _104_Max_Depth_of_Binary_Tree().execute();
         new _110_Balanced_Binary_Tree().execute();
         new _226_Invert_Binary_Tree().execute();
