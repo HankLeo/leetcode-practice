@@ -14,5 +14,6 @@ public class LinkedListPractices {
         new _234_Palindrome_Linked_List().execute();
         new _725_Split_Linked_List_in_Parts().execute();
         new _328_Odd_Even_Linked_List().execute();
+        new _146_LRU_Cache().execute();
     }
 }
