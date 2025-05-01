@@ -7,5 +7,6 @@ public class SortPractices {
         new _347_TopK_Frequent_Elements().execute();
         new _451_Sort_Characters_By_Frequency().execute();
         new _75_Sort_Colors().execute();
+        new _148_Sort_List().execute();
     }
 }
