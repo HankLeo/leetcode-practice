@@ -3,6 +3,7 @@ package io.hank.leetcode.practices.binarysearch;
 public class BinarySearchPractices {
     public static void execute() {
         System.out.println("\n******** Binary Search *******");
+        new _33_Search_In_Rotated_Sorted_Array().execute();
         new _35_Search_Insert_Position().execute();
         new _69_Sqrt_X().execute();
         new _74_Search_2D_Matrix().execute();
