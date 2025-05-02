@@ -23,6 +23,7 @@ public final class TreePractices {
         new _513_Find_Bottom_Left_Tree_Value().execute();
         new _102_Binary_Tree_Level_Order_Traversal().execute();
         // DFS
+        new _114_Flatten_BinaryTree_To_LinkedList().execute();
         new _144_Binary_Tree_Preorder_Traversal().execute();
         new _145_Binary_Tree_Postorder_Traversal().execute();
         new _94_Binary_Tree_Inorder_Traversal().execute();
