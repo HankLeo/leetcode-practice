@@ -19,5 +19,6 @@ public class ArrayMatrixPractices {
         new _766_Toeplitz_Matrix().execute();
         new _565_Array_Nesting().execute();
         new _769_Max_Chunks_To_Make_Sorted().execute();
+        new _238_Product_of_Array_Except_Self().execute();
     }
 }
