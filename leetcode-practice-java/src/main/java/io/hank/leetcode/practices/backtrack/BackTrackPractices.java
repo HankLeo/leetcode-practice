@@ -4,6 +4,7 @@ public class BackTrackPractices {
     public static void execute() {
         System.out.println("\n******** Backtrack *******");
         new _17_Letter_Combinations_of_Phone_Number().execute();
+        new _22_Generate_Parentheses().execute();
         new _93_Restore_IP_Addresses().execute();
         new _79_Word_Search().execute();
         new _257_Binary_Tree_Paths().execute();
