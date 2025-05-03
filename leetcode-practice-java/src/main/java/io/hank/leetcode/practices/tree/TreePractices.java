@@ -6,6 +6,7 @@ public final class TreePractices {
         // Recursion
         new _98_Validate_BST().execute();
         new _104_Max_Depth_of_Binary_Tree().execute();
+        new _105_Build_BT_From_Preorder_Inorder_Traversal().execute();
         new _110_Balanced_Binary_Tree().execute();
         new _226_Invert_Binary_Tree().execute();
         new _671_Second_Min_Node_In_Binary_Tree().execute();
