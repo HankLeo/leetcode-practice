@@ -21,5 +21,6 @@ public class ArrayMatrixPractices {
         new _565_Array_Nesting().execute();
         new _769_Max_Chunks_To_Make_Sorted().execute();
         new _238_Product_of_Array_Except_Self().execute();
+        new _31_Next_Permutation().execute();
     }
 }
