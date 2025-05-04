@@ -20,6 +20,7 @@ public final class TreePractices {
         new _687_Longest_Univalue_Path().execute();
         new _337_House_Robber_III().execute();
         // BFS
+        new _199_Binary_Tree_Right_Side_View().execute();
         new _637_Average_of_Levels_in_Binary_Tree().execute();
         new _513_Find_Bottom_Left_Tree_Value().execute();
         new _102_Binary_Tree_Level_Order_Traversal().execute();
