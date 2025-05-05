@@ -1,5 +1,7 @@
 package io.hank.leetcode.practices.dp;
 
+import io.hank.leetcode.annotations.Topic;
+import io.hank.leetcode.annotations.TopicType;
 import io.hank.leetcode.practices.LeetcodeProblemSolution;
 
 /**
@@ -79,6 +81,7 @@ public class _5_Longest_Palindromic_Substring extends LeetcodeProblemSolution {
 //    }
 
 
+    @Topic(TopicType.TWO_POINTER)
     public String longestPalindrome(String s) {
         // 双指针中心扩散，中心可能为一个点（奇数），也可能为两个（偶数）
         int maxLen = 0, maxStart = 0, maxEnd = 0;
