@@ -46,25 +46,16 @@ public class _123_Best_Buy_Sell_Stock_with_2_Times extends LeetcodeProblemSoluti
     @TimeComplexity(ComplexityType.O_N)
     @SpaceComplexity(ComplexityType.O_1)
     public int maxProfit(int[] prices) {
-        if (prices.length <= 1) {
-            return 0;
-        }
-        int buy1 = -prices[0];
-        int sell1 = 0;
-        int buy2 = Integer.MIN_VALUE;
-        int sell2 = 0;
+        int buy1 = Integer.MIN_VALUE; // 第一次买入后的最大利润
+        int sell1 = 0; // 第一次卖出后的最大利润
+        int buy2 = Integer.MIN_VALUE; // 第二次买入后的最大利润
+        int sell2 = 0; // 第二次卖出后的最大利润
         for (int price : prices) {
-            int preBuy1 = buy1;
-            int preSell1 = sell1;
-            int preBuy2 = buy2;
-            int preSell2 = sell2;
-
-            //dp status change
-            buy1 = Math.max(preBuy1, -price);
-            sell1 = Math.max(preSell1, preBuy1 + price);
-            buy2 = Math.max(preBuy2, preSell1 - price);
-            sell2 = Math.max(preSell2, preBuy2 + price);
+            buy1 = Math.max(buy1, -price); // 第i天买入或者不买入
+            sell1 = Math.max(sell1, buy1 + price); // 第i天卖出或者不卖出
+            buy2 = Math.max(buy2, sell1 - price); // 第i天买入或者不买入
+            sell2 = Math.max(sell2, buy2 + price); // 第i天卖出或者不卖出
         }
-        return Math.max(sell1, sell2);
+        return sell2;
     }
 }

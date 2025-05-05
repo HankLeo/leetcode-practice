@@ -3,8 +3,6 @@ package io.hank.leetcode.practices.dp;
 import io.hank.leetcode.annotations.*;
 import io.hank.leetcode.practices.LeetcodeProblemSolution;
 
-import java.util.Arrays;
-
 /**
  * <pre>
  * You are given an integer array prices where prices[i] is the price of a given stock on the ith day, and an integer k.
@@ -40,45 +38,26 @@ public class _188_Best_Buy_Sell_Stock_with_K_Times extends LeetcodeProblemSoluti
     @TimeComplexity(ComplexityType.O_KN)
     @SpaceComplexity(ComplexityType.O_K)
     public int maxProfit(int k, int[] prices) {
-        if (prices.length <= 1) {
-            return 0;
+        int n = prices.length;
+        if (k >= n / 2) {   // 这种情况下该问题退化为普通的股票交易问题
+            int maxProfit = 0;
+            for (int i = 1; i < n; i++) {
+                if (prices[i] > prices[i - 1]) {
+                    maxProfit += prices[i] - prices[i - 1];
+                }
+            }
+            return maxProfit;
         }
-        if (k >= prices.length / 2) {
-            return maxProfitNormal(prices);
-        } else {
-            return maxProfitWithK(k, prices);
-        }
-    }
-
-    private int maxProfitNormal(int[] prices) {
-        int max = 0;
-        for (int i = 1; i < prices.length; i++) {
-            if (prices[i] > prices[i - 1]) {
-                max += prices[i] - prices[i - 1];
+        // 定义 maxProfit[i][j] 表示在第 j 天结束时，最多进行了 i 次交易所能获得的最大利润
+        // 则 maxProfit[i][j] = max(maxProfit[i][j-1], max(prices[j] - prices[m] + maxProfit[i-1][m]))，其中 m 是 0 到 j-1 的任意值
+        int[][] maxProfit = new int[k + 1][n];
+        for (int i = 1; i <= k; i++) {
+            int localMax = maxProfit[i - 1][0] - prices[0]; // 记录 maxProfit[i-1][m] - prices[m] 的最大值
+            for (int j = 1; j < n; j++) {
+                maxProfit[i][j] = Math.max(maxProfit[i][j - 1], prices[j] + localMax);
+                localMax = Math.max(localMax, maxProfit[i - 1][j] - prices[j]);
             }
         }
-        return max;
-    }
-
-    private int maxProfitWithK(int k, int[] prices) {
-        int[] buys = new int[k];
-        int[] sells = new int[k];
-        Arrays.fill(buys, Integer.MIN_VALUE);
-        for (int price : prices) {
-            int[] preBuys = Arrays.copyOf(buys, k);
-            int[] preSells = Arrays.copyOf(sells, k);
-            buys[0] = Math.max(preBuys[0], -price);
-            sells[0] = Math.max(preSells[0], preBuys[0] + price);
-            // status change
-            for (int i = 1; i < k; i++) {
-                buys[i] = Math.max(preBuys[i], preSells[i - 1] - price);
-                sells[i] = Math.max(preSells[i], preBuys[i] + price);
-            }
-        }
-        int max = 0;
-        for (int sell : sells) {
-            max = Math.max(max, sell);
-        }
-        return max;
+        return maxProfit[k][n - 1];
     }
 }
