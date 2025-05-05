@@ -48,22 +48,25 @@ public class _39_Combination_Sum extends LeetcodeProblemSolution {
 
     @Topic(TopicType.BACKTRACK)
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
-        List<List<Integer>> result = new ArrayList<>();
-        backtrack(candidates, target, result, new ArrayList<Integer>(), 0);
-        return result;
+        // Arrays.sort(candidates);
+        List<List<Integer>> res = new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
+        backtrack(res, list, candidates, target, 0);
+        return res;
     }
 
-    private void backtrack(int[] candidates, int target, List<List<Integer>> result, List<Integer> list, int start) {
+    private void backtrack(List<List<Integer>> res, List<Integer> list, int[] candidates, int target, int startIndex) {
         if (target == 0) {
-            result.add(new ArrayList<Integer>(list));
+            res.add(new ArrayList<>(list));
             return;
         }
-        if (target < 0) {
-            return;
-        }
-        for (int i = start; i < candidates.length; i++) {
+        for (int i = startIndex; i < candidates.length; i++) {
+            if (target < candidates[i]) {
+                // break;
+                continue;
+            }
             list.add(candidates[i]);
-            backtrack(candidates, target - candidates[i], result, list, i);
+            backtrack(res, list, candidates, target - candidates[i], i);
             list.removeLast();
         }
     }

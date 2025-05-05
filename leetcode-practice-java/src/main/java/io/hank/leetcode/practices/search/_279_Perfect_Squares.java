@@ -3,9 +3,7 @@ package io.hank.leetcode.practices.search;
 import io.hank.leetcode.annotations.*;
 import io.hank.leetcode.practices.LeetcodeProblemSolution;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 import java.util.Queue;
 
 /**
@@ -38,37 +36,43 @@ public class _279_Perfect_Squares extends LeetcodeProblemSolution {
     @Topic({TopicType.BFS, TopicType.TREE})
     @TimeComplexity(ComplexityType.O_NSqrtN)
     @SpaceComplexity(ComplexityType.O_N)
-    int maxSquares(int n) {
-        List<Integer> squares = generateSquares(n);
+    public int numSquares(int n) {
+        int[] squares = generateSquares(n);
+        int res = 0;
+        boolean[] visited = new boolean[n + 1];
         Queue<Integer> queue = new LinkedList<>();
         queue.offer(n);
-        boolean[] visited = new boolean[n + 1];
-        int level = 0;
-
         while (!queue.isEmpty()) {
             int size = queue.size();
-            level++;
+            res++;
+            // 遍历每一层
             for (int i = 0; i < size; i++) {
-                int cur = queue.poll();
+                int num = queue.poll();
                 for (int square : squares) {
-                    int next = cur - square;
-                    if (next == 0) {
-                        return level;
+                    // 先到达的层数即为答案
+                    if (square == num) {
+                        return res;
                     }
-                    if (next > 0 && !visited[next]) {
-                        queue.offer(next);
-                        visited[next] = true;
+                    int diff = num - square;
+                    if (diff > 0 && !visited[diff]) {
+                        // 标记已访问
+                        visited[diff] = true;
+                        queue.offer(diff);
+                    }
+                    if (diff < 0) {
+                        break;
                     }
                 }
             }
         }
-        return 0;
+        return res;
     }
 
-    private List<Integer> generateSquares(int n) {
-        List<Integer> squares = new ArrayList<>();
-        for (int i = (int) Math.sqrt(n); i > 0; i--) {
-            squares.add(i * i);
+    private int[] generateSquares(int n) {
+        int sqrt = (int) Math.sqrt(n);
+        int[] squares = new int[sqrt];
+        for (int i = 1; i <= sqrt; i++) {
+            squares[i - 1] = i * i;
         }
         return squares;
     }

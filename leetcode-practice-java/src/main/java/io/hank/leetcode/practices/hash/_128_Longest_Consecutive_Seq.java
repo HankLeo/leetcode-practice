@@ -48,7 +48,7 @@ public class _128_Longest_Consecutive_Seq extends LeetcodeProblemSolution {
         }
         int maxLen = 0;
         for (int num : set) {
-            // check if num is first element forsequence
+            // check if num is first element for sequence
             if (!set.contains(num - 1)) {
                 int curLen = 1;
                 while (set.contains(++num)) {
