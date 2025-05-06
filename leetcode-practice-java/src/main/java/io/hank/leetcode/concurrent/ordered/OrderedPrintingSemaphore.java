@@ -23,24 +23,25 @@ public class OrderedPrintingSemaphore {
     }
 
     public static void main(String[] args) {
-        ExecutorService executorService = Executors.newFixedThreadPool(THREAD_COUNT);
-        for (int i = 0; i < THREAD_COUNT; i++) {
-            final int threadId = i; // 线程ID等于信号量数组的索引
-            executorService.execute(() -> {
-                do {
-                    try {
-                        semaphores[threadId].acquire(); // 等待当前线程信号量
-                        if (counter <= MAX) {
-                            System.out.println("Thread-" + threadId + ": " + counter++);
+        try (ExecutorService executorService = Executors.newFixedThreadPool(THREAD_COUNT)) {
+            for (int i = 0; i < THREAD_COUNT; i++) {
+                final int threadId = i; // 线程ID等于信号量数组的索引
+                executorService.execute(() -> {
+                    do {
+                        try {
+                            semaphores[threadId].acquire(); // 等待当前线程信号量
+                            if (counter <= MAX) {
+                                System.out.println("Thread-" + threadId + ": " + counter++);
+                            }
+                            semaphores[(threadId + 1) % THREAD_COUNT].release(1); // 指定释放下一个线程的信号量
+                        } catch (InterruptedException e) {
+                            Thread.currentThread().interrupt();
                         }
-                        semaphores[(threadId + 1) % THREAD_COUNT].release(1); // 指定释放下一个线程的信号量
-                    } catch (InterruptedException e) {
-                        Thread.currentThread().interrupt();
-                    }
-                } while (counter <= MAX);
-            });
+                    } while (counter <= MAX);
+                });
+            }
+            executorService.shutdown();
         }
-        executorService.shutdown();
     }
 
 }
