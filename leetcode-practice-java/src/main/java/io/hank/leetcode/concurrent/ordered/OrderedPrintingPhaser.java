@@ -3,7 +3,7 @@ package io.hank.leetcode.concurrent.ordered;
 import java.util.concurrent.Phaser;
 
 public class OrderedPrintingPhaser {
-    private static volatile int counter = 1;
+    private static int counter = 1;
     private static final int MAX = 100;
     private static final Phaser phaser = new Phaser(0); // 初始注册数为0
 
@@ -15,7 +15,7 @@ public class OrderedPrintingPhaser {
             new Thread(() -> {
                 while (true) {
                     int phase = phaser.arriveAndAwaitAdvance() - 1; // 当前线程到达并等待其他所有未到达的线程都到达后phase++
-                    System.out.println("Thread-" + threadId + " unarrived parties: " + phaser.getUnarrivedParties());
+//                    System.out.println("Thread-" + threadId + " unarrived parties: " + phaser.getUnarrivedParties());
                     if (counter > MAX) {
                         phaser.arriveAndDeregister();
                         break;
