@@ -27,7 +27,7 @@ public class OrderedPrintingSemaphore {
             for (int i = 0; i < THREAD_COUNT; i++) {
                 final int threadId = i; // 线程ID等于信号量数组的索引
                 executorService.submit(() -> {
-                    do {
+                    while (counter <= MAX) {
                         try {
                             semaphores[threadId].acquire(1); // 等待当前线程信号量
                             if (counter <= MAX) {
@@ -37,7 +37,7 @@ public class OrderedPrintingSemaphore {
                         } catch (InterruptedException e) {
                             Thread.currentThread().interrupt();
                         }
-                    } while (counter <= MAX);
+                    }
                 });
             }
         }

@@ -11,10 +11,10 @@ public class OrderedPrintingWaitNotify {
         for (int i = 0; i < threadCount; i++) {
             final int threadId = i;
             new Thread(() -> {
-                while (true) {
+                while (counter <= MAX) {
                     synchronized (lock) {
                         // 如果不是当前线程，等待
-                        while (counter <= MAX && currentThread != threadId) {
+                        while (currentThread != threadId) {
                             try {
                                 lock.wait();
                             } catch (InterruptedException e) {
@@ -22,13 +22,10 @@ public class OrderedPrintingWaitNotify {
                                 return;
                             }
                         }
-                        // 如果已打印完毕，结束线程
-                        if (counter > MAX) {
-                            lock.notifyAll(); // 打印结束后释放其余线程
-                            break;
-                        }
                         // 如果是当前线程，打印数字并通知其他所有线程
-                        System.out.println("Thread-" + threadId + ": " + counter++);
+                        if (counter <= MAX) {
+                            System.out.println("Thread-" + threadId + ": " + counter++);
+                        }
                         currentThread = (currentThread + 1) % threadCount;
                         lock.notifyAll(); // 缺点是只能通知其余所有线程
                     }
