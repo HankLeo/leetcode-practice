@@ -16,5 +16,10 @@ public class LinkedListPractices {
         new _328_Odd_Even_Linked_List().execute();
         new _138_Copy_List_With_Random_Pointer().execute();
         new _146_LRU_Cache().execute();
+        new _25_Reverse_Nodes_In_K_Group().execute();
+    }
+
+    public static void main(String[] args) {
+        execute();
     }
 }
