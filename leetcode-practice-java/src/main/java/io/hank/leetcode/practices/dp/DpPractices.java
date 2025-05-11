@@ -19,6 +19,7 @@ public class DpPractices {
         new _1143_Longest_Common_Subsequence().execute();
         new _583_Delete_Operation_for_Two_Strings().execute();
         new _72_Edit_Distance().execute();
+        new _32_Longest_Valid_Parentheses().execute();
         // stock buy and sell
         new _309_Buy_Sell_Stock_with_Cooldown().execute();
         new _714_Buy_Sell_Stock_with_Fee().execute();
@@ -32,5 +33,9 @@ public class DpPractices {
         new _518_Coin_Change_II().execute();
         new _139_Word_Break().execute();
         new _377_Combination_Sum_IV().execute();
+    }
+
+    public static void main(String[] args) {
+        execute();
     }
 }
