@@ -11,6 +11,7 @@ public class HashPractices {
         new _438_Find_All_Anagrams_In_String().execute();
         new _49_Group_Anagrams().execute();
         new _41_First_Missing_Positive().execute();
+        new _76_Min_Window_Substring().execute();
     }
 
     public static void main(String[] args) {

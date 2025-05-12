@@ -38,42 +38,46 @@ public class _51_N_Queens extends LeetcodeProblemSolution {
 
     @Topic(TopicType.BACKTRACK)
     public List<List<String>> solveNQueens(int n) {
-        List<List<String>> result = new ArrayList<>();
-        boolean[] cols = new boolean[n];
-        boolean[] diag1 = new boolean[2 * n - 1];
-        boolean[] diag2 = new boolean[2 * n - 1];
-        int[] queenPos = new int[n];
-        backtrack(n, result, 0, queenPos, cols, diag1, diag2);
-        return result;
+        // 一行只出现一个，逐行递归
+        // 一列也只出现一个，正对角线、反对角线也只出现一个
+        // 标记以上4个状态并回溯
+        List<List<String>> res = new ArrayList<>();
+        int[] qCols = new int[n]; // 记录每一行的皇后位置
+        boolean[] blockedCols = new boolean[n];
+        boolean[] blockedDiags1 = new boolean[2 * n - 1]; // 正对角线
+        boolean[] blockedDiags2 = new boolean[2 * n - 1]; // 反对角线
+        backtrack(n, res, qCols, 0, blockedCols, blockedDiags1, blockedDiags2);
+        return res;
     }
 
-    private void backtrack(int n, List<List<String>> result, int row, int[] queenPos, boolean[] cols, boolean[] diag1, boolean[] diag2) {
-        if (n == row) {
-            List<String> solution = new ArrayList<>();
+    private void backtrack(int n, List<List<String>> res, int[] qCols,
+                           int row, boolean[] blockedCols, boolean[] blockedDiags1, boolean[] blockedDiags2) {
+        if (row == n) {
+            // 满足条件的解
+            List<String> list = new ArrayList<>();
             for (int i = 0; i < n; i++) {
                 char[] chars = new char[n];
                 Arrays.fill(chars, '.');
-                chars[queenPos[i]] = 'Q';
-                solution.add(new String(chars));
+                chars[qCols[i]] = 'Q';
+                list.add(new String(chars));
             }
-            result.add(solution);
+            res.add(list);
             return;
         }
 
         for (int col = 0; col < n; col++) {
-            int diagId1 = row + col;
-            int diagId2 = row - col + n - 1;
-            if (!cols[col] && !diag1[diagId1] && !diag2[diagId2]) {
-                queenPos[row] = col;
-                cols[col] = true;
-                diag1[diagId1] = true;
-                diag2[diagId2] = true;
-
-                backtrack(n, result, row + 1, queenPos, cols, diag1, diag2);
-                queenPos[row] = 0;
-                cols[col] = false;
-                diag1[diagId1] = false;
-                diag2[diagId2] = false;
+            // 迭代每一个col的可能
+            int diag1 = n - row + col - 1, diag2 = row + col;
+            if (!blockedCols[col] && !blockedDiags1[diag1] && !blockedDiags2[diag2]) {
+                blockedCols[col] = true;
+                blockedDiags1[diag1] = true;
+                blockedDiags2[diag2] = true;
+                qCols[row] = col;
+                backtrack(n, res, qCols, row + 1, blockedCols, blockedDiags1, blockedDiags2);
+                blockedCols[col] = false;
+                blockedDiags1[diag1] = false;
+                blockedDiags2[diag2] = false;
+                qCols[row] = 0;
             }
         }
     }
