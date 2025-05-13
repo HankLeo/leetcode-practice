@@ -30,6 +30,7 @@ public final class TreePractices {
         new _144_Binary_Tree_Preorder_Traversal().execute();
         new _145_Binary_Tree_Postorder_Traversal().execute();
         new _94_Binary_Tree_Inorder_Traversal().execute();
+        new _1488_Count_Good_Nodes_In_Binary_Tree().execute();
         // BST
         new _669_Trim_a_Binary_Search_Tree().execute();
         new _230_Kth_Smallest_Element_in_a_BST().execute();

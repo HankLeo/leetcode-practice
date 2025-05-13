@@ -14,5 +14,10 @@ public class TwoPointerPractices {
         new _15_3Sum().execute();
         new _16_3Sum_Closest().execute();
         new _11_Container_With_Most_Water().execute();
+        new _1768_Merge_Strings_Alternately().execute();
+    }
+
+    public static void main(String[] args) {
+        execute();
     }
 }
