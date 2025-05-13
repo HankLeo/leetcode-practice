@@ -11,6 +11,7 @@ public final class TreePractices {
         new _226_Invert_Binary_Tree().execute();
         new _671_Second_Min_Node_In_Binary_Tree().execute();
         new _112_Path_Sum().execute();
+        new _124_Binary_Tree_Max_Path_Sum().execute();
         new _617_Merge_Two_Binary_Trees().execute();
         new _572_Subtree_of_Another_Tree().execute();
         new _101_Symmetric_Tree().execute();
@@ -42,5 +43,9 @@ public final class TreePractices {
         // Trie
         new _208_Implement_Trie().execute();
         new _677_Map_Sum_Pairs().execute();
+    }
+
+    public static void main(String[] args) {
+        execute();
     }
 }
