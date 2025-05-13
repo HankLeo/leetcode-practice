@@ -13,6 +13,7 @@ public class StackQueuePractices {
         new _503_Next_Greater_Element_II().execute();
         new _394_Decode_String().execute();
         new _239_Sliding_Window_Max().execute();
+        new _295_Find_Median_From_Data_Stream().execute();
     }
 
     public static void main(String[] args) {
