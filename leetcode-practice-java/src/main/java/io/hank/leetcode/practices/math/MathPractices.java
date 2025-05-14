@@ -9,5 +9,10 @@ public class MathPractices {
         new _7_Reverse_Integer().execute();
         new _9_Palindrome_Number().execute();
         new _560_Subarray_Sum_Equals_K().execute();
+        new _1071_GCD_of_Strings().execute();
+    }
+
+    public static void main(String[] args) {
+        execute();
     }
 }
