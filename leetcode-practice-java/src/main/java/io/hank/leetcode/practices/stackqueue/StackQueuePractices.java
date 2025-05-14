@@ -14,6 +14,7 @@ public class StackQueuePractices {
         new _394_Decode_String().execute();
         new _239_Sliding_Window_Max().execute();
         new _295_Find_Median_From_Data_Stream().execute();
+        new _2390_Removing_Stars_From_a_String().execute();
     }
 
     public static void main(String[] args) {
