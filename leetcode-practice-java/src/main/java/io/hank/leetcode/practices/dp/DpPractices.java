@@ -20,6 +20,7 @@ public class DpPractices {
         new _583_Delete_Operation_for_Two_Strings().execute();
         new _72_Edit_Distance().execute();
         new _32_Longest_Valid_Parentheses().execute();
+        new _1137_Nth_Tribonacci_Num().execute();
         // stock buy and sell
         new _309_Buy_Sell_Stock_with_Cooldown().execute();
         new _714_Buy_Sell_Stock_with_Fee().execute();
