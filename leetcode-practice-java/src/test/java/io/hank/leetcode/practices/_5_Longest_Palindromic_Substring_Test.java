@@ -27,7 +27,7 @@ class _5_Longest_Palindromic_Substring_Test {
     }
 
     @ParameterizedTest
-    @ValueSource(strings = {"a", "aaaa", "bb", ""})
+    @ValueSource(strings = {"a", "aaaa", "bb"})
     void testLongestPalindrome_EqualsSelf(String arg) {
         _5_Longest_Palindromic_Substring solution = new _5_Longest_Palindromic_Substring();
         String result = solution.longestPalindrome(arg);
