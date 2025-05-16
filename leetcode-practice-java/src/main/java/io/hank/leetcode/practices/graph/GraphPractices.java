@@ -6,6 +6,8 @@ public class GraphPractices {
         new _207_Course_Schedule().execute();
         new _785_Is_Graph_Bipartite().execute();
         new _994_Rotting_Oranges().execute();
+        // BFS
+        new _1926_Nearest_Exit_From_Entrance_in_Maze().execute();
     }
 
     public static void main(String[] args) {
