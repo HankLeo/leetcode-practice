@@ -23,5 +23,10 @@ public class ArrayMatrixPractices {
         new _238_Product_of_Array_Except_Self().execute();
         new _31_Next_Permutation().execute();
         new _48_Rotate_Image().execute();
+        new _1431_Kids_with_Greatest_Num_of_Candies().execute();
+    }
+
+    public static void main(String[] args) {
+        execute();
     }
 }
