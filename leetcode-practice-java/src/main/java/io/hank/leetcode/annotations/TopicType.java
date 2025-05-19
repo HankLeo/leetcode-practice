@@ -3,6 +3,7 @@ package io.hank.leetcode.annotations;
 public enum TopicType {
     HASH("Hash"),
     STRING("String"),
+    SLIDING_WINDOW("Sliding Window"),
     ARRAY("Array"),
     MATRIX("Matrix"),
     LINKED_LIST("Linked List"),
