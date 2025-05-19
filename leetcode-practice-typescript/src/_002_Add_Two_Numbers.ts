@@ -25,59 +25,61 @@
  */
 
 class ListNode {
-  val: number
-  next: ListNode | null
+    val: number;
+    next: ListNode | null;
 
-  constructor(val: number, next?: ListNode | null) {
-    this.val = val
-    this.next = next || null
-  }
+    constructor(val: number, next?: ListNode | null) {
+        this.val = val;
+        this.next = next || null;
+    }
 }
 
-function addTwoNumbers(l1: ListNode | null, l2: ListNode | null): ListNode | null {
-  const dummyHead = new ListNode(0)
-  let pointer = dummyHead
-  let carry = 0
+function addTwoNumbers(
+    l1: ListNode | null,
+    l2: ListNode | null,
+): ListNode | null {
+    const dummyHead = new ListNode(0);
+    let pointer = dummyHead;
+    let carry = 0;
 
-  while (l1 != null || l2 != null || carry != 0) {
-    const digit1: number = l1?.val || 0
-    const digit2: number = l2?.val || 0
-    const sum = digit1 + digit2 + carry
-    const digit = sum % 10
-    carry = sum >= 10 ? 1 : 0
+    while (l1 !== null || l2 !== null || carry !== 0) {
+        const digit1: number = l1?.val || 0;
+        const digit2: number = l2?.val || 0;
+        const sum = digit1 + digit2 + carry;
+        const digit = sum % 10;
+        carry = sum >= 10 ? 1 : 0;
 
-    pointer.next = new ListNode(digit)
-    pointer = pointer.next
+        pointer.next = new ListNode(digit);
+        pointer = pointer.next;
 
-    l1 = l1?.next || null
-    l2 = l2?.next || null
-  }
+        l1 = l1?.next || null;
+        l2 = l2?.next || null;
+    }
 
-  const result = dummyHead.next
-  dummyHead.next = null
-  return result
+    const result = dummyHead.next;
+    dummyHead.next = null;
+    return result;
 }
 
 function printOutput(result: ListNode | null) {
-  let output: string = ''
-  while (result != null) {
-    output += result.val
-    result = result.next || null
-  }
-  console.log(output)
+    let output = '';
+    while (result !== null) {
+        output += result.val;
+        result = result.next || null;
+    }
+    console.log(output);
 }
 
 export function execute() {
-  let pointer: ListNode
-  // Example 1
-  let l1 = new ListNode(2)
-  pointer = l1.next = new ListNode(4)
-  pointer.next = new ListNode(3)
+    let pointer: ListNode;
+    // Example 1
+    const l1 = new ListNode(2);
+    pointer = l1.next = new ListNode(4);
+    pointer.next = new ListNode(3);
 
-  let l2 = new ListNode(5)
-  pointer = l2.next = new ListNode(6)
-  pointer.next = new ListNode(4)
+    const l2 = new ListNode(5);
+    pointer = l2.next = new ListNode(6);
+    pointer.next = new ListNode(4);
 
-  printOutput(addTwoNumbers(l1, l2))
-
+    printOutput(addTwoNumbers(l1, l2));
 }

@@ -9,7 +9,7 @@ function letterCombinations(digits: string): string[] {
         '7': 'pqrs',
         '8': 'tuv',
         '9': 'wxyz',
-    }
+    };
 
     const backtrack = (index: number, path: string) => {
         if (path.length === digits.length) {
@@ -18,14 +18,16 @@ function letterCombinations(digits: string): string[] {
         }
         for (let i = index; i < digits.length; i++) {
             const letters = map[digits[index]];
-            for (let letter of letters) {
+            for (const letter of letters) {
                 backtrack(i + 1, path + letter);
             }
         }
-    }
+    };
 
     if (digits.length > 0) {
         backtrack(0, '');
     }
     return res;
-};
+}
+
+console.log(letterCombinations('23'));

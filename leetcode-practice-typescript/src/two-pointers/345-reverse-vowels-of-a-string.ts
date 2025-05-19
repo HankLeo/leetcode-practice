@@ -17,4 +17,6 @@ function reverseVowels(s: string): string {
         right--;
     }
     return arr.join('');
-};
+}
+
+console.log(reverseVowels('hello'));
