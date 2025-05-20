@@ -15,6 +15,7 @@ public class StackQueuePractices {
         new _239_Sliding_Window_Max().execute();
         new _295_Find_Median_From_Data_Stream().execute();
         new _2390_Removing_Stars_From_a_String().execute();
+        new _735_Asteroid_Collision().execute();
     }
 
     public static void main(String[] args) {
