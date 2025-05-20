@@ -9,6 +9,7 @@ public class SortPractices {
         new _451_Sort_Characters_By_Frequency().execute();
         new _75_Sort_Colors().execute();
         new _148_Sort_List().execute();
+        new _2336_Smallest_Num_in_Infinite_Set().execute();
     }
 
     public static void main(String[] args) {
