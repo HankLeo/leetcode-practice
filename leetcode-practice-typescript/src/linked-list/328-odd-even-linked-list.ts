@@ -1,4 +1,4 @@
-import {ListNode} from "../libs";
+import {ListNode} from '../libs';
 
 function oddEvenList(head: ListNode | null): ListNode | null {
     if (head == null) {
@@ -6,13 +6,13 @@ function oddEvenList(head: ListNode | null): ListNode | null {
     }
     let curOdd = head;
     let curEven = head.next;
-    let evenHead = curEven;
+    const evenHead = curEven;
     while (curOdd != null && curEven != null) {
-        let nextOdd = curEven.next;
+        const nextOdd = curEven.next;
         if (nextOdd == null) {
             break;
         } else {
-            let nextEven = nextOdd.next;
+            const nextEven = nextOdd.next;
             curOdd.next = nextOdd;
             curEven.next = nextEven;
             curOdd = nextOdd;
@@ -23,4 +23,11 @@ function oddEvenList(head: ListNode | null): ListNode | null {
     return head;
 }
 
-console.log(oddEvenList(new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))))));
+console.log(
+    oddEvenList(
+        new ListNode(
+            1,
+            new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))),
+        ),
+    ),
+);

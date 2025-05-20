@@ -15,5 +15,5 @@ function isSubsequence(s: string, t: string): boolean {
     return p1 === s.length;
 }
 
-console.log(isSubsequence("abc", "ahbgdc"));
-console.log(isSubsequence("axc", "ahbgdc"));
+console.log(isSubsequence('abc', 'ahbgdc'));
+console.log(isSubsequence('axc', 'ahbgdc'));

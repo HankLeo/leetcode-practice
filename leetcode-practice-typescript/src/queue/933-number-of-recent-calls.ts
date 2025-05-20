@@ -10,7 +10,7 @@ class RecentCounter {
         const {EXPIRED, queue} = this;
         queue.push(t); // 加入数组尾部
         while (queue.length > 0 && queue[0] < t - EXPIRED) {
-            queue.shift() // 移除数组头部
+            queue.shift(); // 移除数组头部
         }
         return queue.length;
     }

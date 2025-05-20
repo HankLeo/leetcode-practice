@@ -1,4 +1,4 @@
-import {TreeNode} from "../libs";
+import {TreeNode} from '../libs';
 
 function pathSum(root: TreeNode | null, targetSum: number): number {
     if (root == null) {
@@ -13,8 +13,29 @@ function pathSum(root: TreeNode | null, targetSum: number): number {
         if (targetSum === root.val) {
             cnt++;
         }
-        return cnt + pathSumWithRoot(root.left, targetSum - root.val) + pathSumWithRoot(root.right, targetSum - root.val)
+        return (
+            cnt +
+            pathSumWithRoot(root.left, targetSum - root.val) +
+            pathSumWithRoot(root.right, targetSum - root.val)
+        );
     }
 
-    return pathSumWithRoot(root, targetSum) + pathSum(root.left, targetSum) + pathSum(root.right, targetSum);
+    return (
+        pathSumWithRoot(root, targetSum) +
+        pathSum(root.left, targetSum) +
+        pathSum(root.right, targetSum)
+    );
 }
+
+pathSum(
+    new TreeNode(
+        10,
+        new TreeNode(
+            5,
+            new TreeNode(3, new TreeNode(3), new TreeNode(-2)),
+            new TreeNode(2, null, new TreeNode(1)),
+        ),
+        new TreeNode(-3, null, new TreeNode(11)),
+    ),
+    8,
+);
