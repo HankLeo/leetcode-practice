@@ -14,6 +14,7 @@ public class BinarySearchPractices {
         new _4_Median_of_Two_Sorted_Arrays().execute();
         new _153_Find_Minimum_in_Rotated_Sorted_Array().execute();
         new _374_Guess_Num_Higher_Or_Lower().execute();
+        new _2300_Successful_Pairs_of_Spells_Potions().execute();
     }
 
     public static void main(String[] args) {
