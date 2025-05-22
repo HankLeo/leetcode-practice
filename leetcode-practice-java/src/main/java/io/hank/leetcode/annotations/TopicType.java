@@ -16,6 +16,7 @@ public enum TopicType {
     GRAPH("Graph"),
 
     MATH("Math"),
+    PREFIX_SUM("Prefix Sum"),
     BIT_MANIPULATION("Bit Manipulation"),
     TWO_POINTER("Two Pointer"),
     SORT_AND_SELECTION("Sort and Selection"),
