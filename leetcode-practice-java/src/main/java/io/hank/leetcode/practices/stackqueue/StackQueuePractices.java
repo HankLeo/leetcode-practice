@@ -16,6 +16,7 @@ public class StackQueuePractices {
         new _295_Find_Median_From_Data_Stream().execute();
         new _2390_Removing_Stars_From_a_String().execute();
         new _735_Asteroid_Collision().execute();
+        new _901_Online_Stock_Span().execute();
         new _933_Num_of_Recent_Calls().execute();
     }
 
