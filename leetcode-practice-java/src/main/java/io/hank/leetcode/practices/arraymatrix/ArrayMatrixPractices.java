@@ -26,6 +26,7 @@ public class ArrayMatrixPractices {
         new _1004_Max_Consecutive_Ones_III().execute();
         new _1431_Kids_with_Greatest_Num_of_Candies().execute();
         new _1732_Find_Highest_Altitude().execute();
+        new _643_Maxi_Avg_Subarray_I().execute();
     }
 
     public static void main(String[] args) {
