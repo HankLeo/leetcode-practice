@@ -17,5 +17,10 @@ public class GreedyPractices {
         new _53_Maximum_Subarray().execute();
         new _763_Partition_Labels().execute();
         new _646_Max_Pair_Chain_Length().execute();
+        new _334_Increasing_Triplet_Subsequence().execute();
+    }
+
+    public static void main(String[] args) {
+        execute();
     }
 }
