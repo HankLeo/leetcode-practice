@@ -22,6 +22,7 @@ public class DpPractices {
         new _72_Edit_Distance().execute();
         new _32_Longest_Valid_Parentheses().execute();
         new _1137_Nth_Tribonacci_Num().execute();
+        new _746_Min_Cost_Climbing_Stairs().execute();
         // stock buy and sell
         new _309_Buy_Sell_Stock_with_Cooldown().execute();
         new _714_Buy_Sell_Stock_with_Fee().execute();
