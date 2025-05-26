@@ -5,6 +5,7 @@ import io.hank.leetcode.annotations.TopicType;
 import io.hank.leetcode.practices.LeetcodeProblemSolution;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
 
 /**
@@ -147,5 +148,19 @@ public class _146_LRU_Cache extends LeetcodeProblemSolution {
                 this.next = next;
             }
         }
+    }
+}
+
+class LRUCache<K, V> extends LinkedHashMap<K, V> {
+    private final int capacity;
+
+    public LRUCache(int capacity) {
+        super(capacity + 1, 1, true);
+        this.capacity = capacity;
+    }
+
+    @Override
+    protected boolean removeEldestEntry(Map.Entry<K, V> eldest) {
+        return size() > capacity;
     }
 }
