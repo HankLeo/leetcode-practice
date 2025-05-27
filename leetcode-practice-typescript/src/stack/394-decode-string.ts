@@ -26,3 +26,7 @@ function decodeString(s: string): string {
     // 最终全部出栈
     return curStr;
 }
+
+console.log(decodeString("3[a]2[bc]"))
+console.log(decodeString("3[a2[c]]"))
+console.log(decodeString("2[abc]3[cd]ef"))
