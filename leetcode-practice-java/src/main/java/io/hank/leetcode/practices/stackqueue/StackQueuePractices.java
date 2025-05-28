@@ -18,6 +18,7 @@ public class StackQueuePractices {
         new _735_Asteroid_Collision().execute();
         new _901_Online_Stock_Span().execute();
         new _933_Num_of_Recent_Calls().execute();
+        new _649_Dota2_Senate().execute();
     }
 
     public static void main(String[] args) {
