@@ -10,6 +10,7 @@ public class MathPractices {
         new _9_Palindrome_Number().execute();
         new _560_Subarray_Sum_Equals_K().execute();
         new _1071_GCD_of_Strings().execute();
+        new _1318_Min_Flips_A_or_B_Equals_C().execute();
     }
 
     public static void main(String[] args) {
