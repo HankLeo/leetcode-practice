@@ -18,6 +18,7 @@ public class GreedyPractices {
         new _763_Partition_Labels().execute();
         new _646_Max_Pair_Chain_Length().execute();
         new _334_Increasing_Triplet_Subsequence().execute();
+        new _2542_Max_Subsequence_Score().execute();
     }
 
     public static void main(String[] args) {
