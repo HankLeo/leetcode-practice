@@ -13,6 +13,7 @@ public class HashPractices {
         new _41_First_Missing_Positive().execute();
         new _76_Min_Window_Substring().execute();
         new _1657_Determine_If_Two_Strings_Close().execute();
+        new _1679_Max_Num_of_K_Sum_Pairs().execute();
         new _2215_Find_Diff_of_Two_Arrays().execute();
         new _2352_Equal_Row_and_Col_Pairs().execute();
     }
