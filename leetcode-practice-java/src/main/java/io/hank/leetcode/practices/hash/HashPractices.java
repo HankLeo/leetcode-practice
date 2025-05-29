@@ -14,6 +14,7 @@ public class HashPractices {
         new _76_Min_Window_Substring().execute();
         new _1657_Determine_If_Two_Strings_Close().execute();
         new _2215_Find_Diff_of_Two_Arrays().execute();
+        new _2352_Equal_Row_and_Col_Pairs().execute();
     }
 
     public static void main(String[] args) {
