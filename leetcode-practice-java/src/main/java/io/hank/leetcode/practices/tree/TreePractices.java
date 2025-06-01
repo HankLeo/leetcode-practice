@@ -21,6 +21,7 @@ public final class TreePractices {
         new _687_Longest_Univalue_Path().execute();
         new _337_House_Robber_III().execute();
         new _450_Delete_Node_in_BST().execute();
+        new _1372_Longest_Zigzag_Path_in_BT().execute();
         // BFS
         new _199_Binary_Tree_Right_Side_View().execute();
         new _637_Average_of_Levels_in_Binary_Tree().execute();
