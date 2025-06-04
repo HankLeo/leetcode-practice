@@ -18,6 +18,7 @@ public class LinkedListPractices {
         new _146_LRU_Cache().execute();
         new _25_Reverse_Nodes_In_K_Group().execute();
         new _2095_Delete_Mid_Node_of_Linked_List().execute();
+        new _2130_Max_Twin_Sum_of_Linked_List().execute();
     }
 
     public static void main(String[] args) {
