@@ -10,6 +10,7 @@ public class SortPractices {
         new _75_Sort_Colors().execute();
         new _148_Sort_List().execute();
         new _2336_Smallest_Num_in_Infinite_Set().execute();
+        new _2462_Total_Cost_to_Hire_K_Workers().execute();
     }
 
     public static void main(String[] args) {
