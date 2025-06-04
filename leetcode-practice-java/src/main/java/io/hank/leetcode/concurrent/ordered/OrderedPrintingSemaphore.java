@@ -31,7 +31,7 @@ public class OrderedPrintingSemaphore {
                         try {
                             semaphores[threadId].acquire(1); // 等待当前线程信号量
                             if (counter <= MAX) {
-                                System.out.println("Thread-" + threadId + ": " + counter++);
+                                System.out.println(STR."Thread-\{threadId}: \{counter++}");
                             }
                             semaphores[(threadId + 1) % THREAD_COUNT].release(1); // 指定释放下一个线程的信号量
                         } catch (InterruptedException e) {

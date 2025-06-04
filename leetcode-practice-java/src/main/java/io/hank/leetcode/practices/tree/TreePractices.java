@@ -48,6 +48,7 @@ public final class TreePractices {
         // Trie
         new _208_Implement_Trie().execute();
         new _677_Map_Sum_Pairs().execute();
+        new _1268_Search_Suggestions_System().execute();
     }
 
     public static void main(String[] args) {
