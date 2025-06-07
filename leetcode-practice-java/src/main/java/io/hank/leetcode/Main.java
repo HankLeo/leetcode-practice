@@ -11,6 +11,7 @@ import io.hank.leetcode.practices.linkedlist.LinkedListPractices;
 import io.hank.leetcode.practices.math.MathPractices;
 import io.hank.leetcode.practices.recursion.RecursionPractices;
 import io.hank.leetcode.practices.search.SearchPractices;
+import io.hank.leetcode.practices.slidingwindow.SlidingWindowPractices;
 import io.hank.leetcode.practices.sort.SortPractices;
 import io.hank.leetcode.practices.stackqueue.StackQueuePractices;
 import io.hank.leetcode.practices.string.StringPractices;
@@ -37,6 +38,7 @@ public class Main {
         StringPractices.execute();
         ArrayMatrixPractices.execute();
         GraphPractices.execute();
+        SlidingWindowPractices.execute();
     }
 
 }

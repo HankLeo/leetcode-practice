@@ -53,5 +53,7 @@ class Solution:
 
 if __name__ == "__main__":
     solution = Solution()
+    print("回溯法结果:")
     print(solution.letter_combinations("23"))
+    print("itertools.product 法结果:")
     print(solution.letterCombinations("23"))

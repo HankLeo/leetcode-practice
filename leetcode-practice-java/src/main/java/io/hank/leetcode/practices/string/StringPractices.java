@@ -13,7 +13,6 @@ public class StringPractices {
         new _205_Isomorphic_Strings().execute();
         new _647_Palindromic_Substrings().execute();
         new _696_Count_Binary_Substrings().execute();
-        new _1456_Max_Num_of_Vowels_in_Sliding_Window().execute();
     }
 
     public static void main(String[] args) {

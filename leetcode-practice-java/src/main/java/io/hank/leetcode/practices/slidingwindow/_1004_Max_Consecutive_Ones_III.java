@@ -1,4 +1,4 @@
-package io.hank.leetcode.practices.arraymatrix;
+package io.hank.leetcode.practices.slidingwindow;
 
 import io.hank.leetcode.annotations.*;
 import io.hank.leetcode.practices.LeetcodeProblemSolution;

@@ -17,7 +17,6 @@ public class TwoPointerPractices {
         new _11_Container_With_Most_Water().execute();
         new _1768_Merge_Strings_Alternately().execute();
         new _443_String_Compression().execute();
-        new _1493_Longest_Subarray_of_1s_After_Deleting().execute();
         new _26_Remove_Duplicates_From_Sorted_Array().execute();
         new _80__26_Remove_Duplicates_From_Sorted_Array_II().execute();
     }

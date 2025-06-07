@@ -1,4 +1,4 @@
-package io.hank.leetcode.practices.twopointer;
+package io.hank.leetcode.practices.slidingwindow;
 
 import io.hank.leetcode.annotations.Topic;
 import io.hank.leetcode.annotations.TopicType;

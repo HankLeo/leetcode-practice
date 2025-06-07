@@ -1,4 +1,4 @@
-package io.hank.leetcode.practices.arraymatrix;
+package io.hank.leetcode.practices.slidingwindow;
 
 import io.hank.leetcode.annotations.*;
 import io.hank.leetcode.practices.LeetcodeProblemSolution;
@@ -32,7 +32,7 @@ import io.hank.leetcode.practices.LeetcodeProblemSolution;
  * -10^4 <= nums[i] <= 10^4
  * </pre>
  */
-public class _643_Maxi_Avg_Subarray_I extends LeetcodeProblemSolution {
+public class _643_Max_Avg_Subarray_I extends LeetcodeProblemSolution {
 
     @Topic({TopicType.SLIDING_WINDOW, TopicType.ARRAY})
     @TimeComplexity(ComplexityType.O_N)
