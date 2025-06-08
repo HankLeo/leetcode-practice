@@ -8,6 +8,7 @@ public class TwoPointerPractices {
         new _345_Reverse_Vowels_of_String().execute();
         new _680_Valid_Palindrome_II().execute();
         new _88_Merge_Sorted_Array().execute();
+        new _125_Valid_Palindrome().execute();
         new _141_Linked_List_Cycle().execute();
         new _142_Linked_List_Cycle_II().execute();
         new _151_Reverse_Words_in_String().execute();
