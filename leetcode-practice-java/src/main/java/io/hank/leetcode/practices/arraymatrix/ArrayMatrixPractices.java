@@ -26,6 +26,7 @@ public class ArrayMatrixPractices {
         new _1431_Kids_with_Greatest_Num_of_Candies().execute();
         new _1732_Find_Highest_Altitude().execute();
         new _724_Find_Pivot_Index().execute();
+        new _36_Valid_Sudoku().execute();
     }
 
     public static void main(String[] args) {
