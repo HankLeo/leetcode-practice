@@ -15,6 +15,7 @@ public final class TreePractices {
         new _617_Merge_Two_Binary_Trees().execute();
         new _572_Subtree_of_Another_Tree().execute();
         new _101_Symmetric_Tree().execute();
+        new _106_Construct_BT_From_Inorder_Postorder().execute();
         new _111_Min_Depth_of_Binary_Tree().execute();
         new _404_Sum_of_Left_Leaves().execute();
         new _437_Path_Sum_III().execute();
