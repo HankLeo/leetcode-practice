@@ -1,4 +1,4 @@
-from libs.treenode import TreeNode
+from libs.tree_node import TreeNode
 
 
 class Solution:
