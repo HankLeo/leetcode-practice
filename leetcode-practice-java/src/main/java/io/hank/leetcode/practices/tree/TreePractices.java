@@ -31,6 +31,7 @@ public final class TreePractices {
         new _1161_Max_Level_Sum_of_BT().execute();
         // DFS
         new _114_Flatten_BinaryTree_To_LinkedList().execute();
+        new _129_Sum_Root_to_Leaf_Nums().execute();
         new _144_Binary_Tree_Preorder_Traversal().execute();
         new _145_Binary_Tree_Postorder_Traversal().execute();
         new _94_Binary_Tree_Inorder_Traversal().execute();
