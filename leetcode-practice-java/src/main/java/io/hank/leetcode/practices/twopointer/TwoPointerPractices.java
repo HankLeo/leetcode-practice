@@ -4,6 +4,7 @@ public class TwoPointerPractices {
     public static void execute() {
         System.out.println("\n******** Two Pointer *******");
         new _167_Two_Sum_II_SortedArray().execute();
+        new _18_4sum().execute();
         new _633_Sum_of_Square_Numbers().execute();
         new _345_Reverse_Vowels_of_String().execute();
         new _680_Valid_Palindrome_II().execute();
