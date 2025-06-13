@@ -11,6 +11,8 @@
     <modules>
         <module>leetcode-practice-java</module>
         <module>leetcode-practice-kotlin</module>
+        <module>leetcode-practice-python</module>
+        <module>leetcode-practice-typescript</module>
     </modules>
 
     <properties>

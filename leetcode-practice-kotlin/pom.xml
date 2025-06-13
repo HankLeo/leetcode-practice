@@ -9,7 +9,6 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>io.hank.leetcode.kotlin</groupId>
     <artifactId>leetcode-practice-kotlin</artifactId>
 
     <properties>
