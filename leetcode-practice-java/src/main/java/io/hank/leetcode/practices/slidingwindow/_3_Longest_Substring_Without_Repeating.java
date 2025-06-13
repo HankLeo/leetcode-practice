@@ -1,10 +1,7 @@
-package io.hank.leetcode.practices.hash;
+package io.hank.leetcode.practices.slidingwindow;
 
-import io.hank.leetcode.annotations.Topic;
-import io.hank.leetcode.annotations.TopicType;
+import io.hank.leetcode.annotations.*;
 import io.hank.leetcode.practices.LeetcodeProblemSolution;
-
-import java.util.Arrays;
 
 /**
  * Given a string s, find the length of the longest
@@ -39,26 +36,29 @@ import java.util.Arrays;
  */
 public class _3_Longest_Substring_Without_Repeating extends LeetcodeProblemSolution {
 
-    @Topic(TopicType.HASH)
-    int lengthOfLongestSubstring(String s) {
-        if (s == null || s.isEmpty()) {
-            return 0;
+    @Topic({TopicType.HASH, TopicType.SLIDING_WINDOW})
+    @TimeComplexity(ComplexityType.O_N)
+    @SpaceComplexity(ComplexityType.O_1)
+    public int lengthOfLongestSubstring(String s) {
+        if (s.length() <= 1) {
+            return s.length();
         }
-
-        int maxLength = 0;
-        int left = 0;
-        int[] charIndex = new int[128];
-        Arrays.fill(charIndex, -1);
-
-        for (int right = 0; right < s.length(); right++) {
-            if (charIndex[s.charAt(right)] >= left) {
-                left = charIndex[s.charAt(right)] + 1;
+        int[] charCnt = new int[128];
+        int left = 0, right = 1;
+        charCnt[s.charAt(left)] = 1;
+        int ans = 1;
+        while (right < s.length()) {
+            char rChar = s.charAt(right);
+            charCnt[rChar] += 1;
+            while (charCnt[rChar] > 1) {
+                charCnt[s.charAt(left)] -= 1;
+                left++;
             }
-            charIndex[s.charAt(right)] = right;
-            maxLength = Math.max(maxLength, right - left + 1);
+            int curLen = right - left + 1;
+            ans = Math.max(ans, curLen);
+            right++;
         }
-
-        return maxLength;
+        return ans;
     }
 
     @Override

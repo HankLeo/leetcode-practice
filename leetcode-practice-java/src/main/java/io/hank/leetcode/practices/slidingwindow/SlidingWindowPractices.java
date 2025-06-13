@@ -2,6 +2,7 @@ package io.hank.leetcode.practices.slidingwindow;
 
 public class SlidingWindowPractices {
     public static void execute() {
+        new _3_Longest_Substring_Without_Repeating().execute();
         new _209_Min_Size_Subarray_Sum().execute();
         new _643_Max_Avg_Subarray_I().execute();
         new _1004_Max_Consecutive_Ones_III().execute();
