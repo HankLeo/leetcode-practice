@@ -23,7 +23,8 @@ public class OrderedPrintingSemaphore {
     }
 
     public static void main(String[] args) {
-        try (ExecutorService executorService = Executors.newFixedThreadPool(THREAD_COUNT)) {
+        try (ExecutorService executorService = Executors.newFixedThreadPool(THREAD_COUNT)) { // try-with-resources自动终止线程池
+            // 启动线程
             for (int i = 0; i < THREAD_COUNT; i++) {
                 final int threadId = i; // 线程ID等于信号量数组的索引
                 executorService.submit(() -> {
