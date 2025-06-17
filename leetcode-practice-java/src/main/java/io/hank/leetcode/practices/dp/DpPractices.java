@@ -12,6 +12,7 @@ public class DpPractices {
         new _198_House_Robber().execute();
         new _64_Min_Path_Sum().execute();
         new _62_Unique_Paths().execute();
+        new _63_Unique_Paths_II().execute();
         new _303_Range_Sum_Query_Immutable().execute();
         new _413_Arithmetic_Slices().execute();
         new _91_Decode_Ways().execute();
