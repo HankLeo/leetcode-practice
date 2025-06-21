@@ -34,6 +34,7 @@ import java.util.PriorityQueue;
  */
 public class _215_Kth_Largest_Element_in_Array extends LeetcodeProblemSolution {
 
+    // 快速排序
     @Topic(TopicType.SORT_AND_SELECTION)
     @TimeComplexity(ComplexityType.O_N_LOG_N)
     @SpaceComplexity(ComplexityType.O_1)
@@ -42,6 +43,7 @@ public class _215_Kth_Largest_Element_in_Array extends LeetcodeProblemSolution {
         return nums[nums.length - k];
     }
 
+    // 小顶堆
     @Topic({TopicType.SORT_AND_SELECTION, TopicType.HEAP})
     @TimeComplexity(ComplexityType.O_N_LOG_K)
     @SpaceComplexity(ComplexityType.O_K)
@@ -61,6 +63,27 @@ public class _215_Kth_Largest_Element_in_Array extends LeetcodeProblemSolution {
         return minHeap.peek();
     }
 
+    // 桶排序
+    @Topic(TopicType.SORT_AND_SELECTION)
+    @TimeComplexity(ComplexityType.O_N)
+    @SpaceComplexity(ComplexityType.O_N)
+    public int findKthLargestByBucket(int[] nums, int k) {
+        // -10^4 <= nums[i] <= 10^4
+        // 桶排序
+        int[] bucket = new int[20001];
+        for (int num : nums) {
+            bucket[num + 10000]++;
+        }
+        for (int i = 20000; i >= 0; i--) {
+            k -= bucket[i];
+            if (k <= 0) {
+                return i - 10000;
+            }
+        }
+        return -1000; // 实际不会执行
+    }
+
+    // 快速选择
     @Topic(TopicType.SORT_AND_SELECTION)
     @TimeComplexity(ComplexityType.O_N)
     @SpaceComplexity(ComplexityType.O_1)
