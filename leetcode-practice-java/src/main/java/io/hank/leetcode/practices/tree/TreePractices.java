@@ -25,6 +25,7 @@ public final class TreePractices {
         new _450_Delete_Node_in_BST().execute();
         new _1372_Longest_Zigzag_Path_in_BT().execute();
         // BFS
+        new _103_Binary_Tree_Zigzag_Level_Order_Traversal().execute();
         new _199_Binary_Tree_Right_Side_View().execute();
         new _637_Average_of_Levels_in_Binary_Tree().execute();
         new _513_Find_Bottom_Left_Tree_Value().execute();
