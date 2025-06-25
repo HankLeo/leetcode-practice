@@ -42,7 +42,7 @@ public class _347_TopK_Frequent_Elements extends LeetcodeProblemSolution {
         for (int num : nums) {
             freqMap.put(num, freqMap.getOrDefault(num, 0) + 1);
         }
-        // freq can be o..nums.length
+        // freq can be 0..nums.length
         List<Integer>[] buckets = new ArrayList[nums.length + 1];
         freqMap.forEach((num, freq) -> {
             if (buckets[freq] == null) {

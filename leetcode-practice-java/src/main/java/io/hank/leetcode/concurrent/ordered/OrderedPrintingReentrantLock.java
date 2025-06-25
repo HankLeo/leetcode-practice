@@ -28,12 +28,12 @@ public class OrderedPrintingReentrantLock {
             final int threadId = i;
             futures[i] = CompletableFuture.runAsync(() -> {
                 while (counter <= MAX) {
-                    lock.lock();
+                    lock.lock(); // 一开始都获取锁，获取失败则进入Blocked状态
                     try {
                         // 如果不是当前线程，等待
                         // 使用while循环防止虚假唤醒
                         while (currentThread != threadId) {
-                            conditions[threadId].await();
+                            conditions[threadId].await(); // 获取锁之后在Runnable状态和Waiting状态之间切换
                         }
                         // 打印数字
                         if (counter <= MAX) {

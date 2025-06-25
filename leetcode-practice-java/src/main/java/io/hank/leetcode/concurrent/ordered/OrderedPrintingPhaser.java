@@ -15,6 +15,7 @@ public class OrderedPrintingPhaser {
             new Thread(() -> {
                 while (true) {
                     int phase = phaser.arriveAndAwaitAdvance() - 1; // 当前线程到达并等待其他所有未到达的线程都到达后phase++
+                    System.out.println("Thread-" + threadId + " phase: " + phase);
 //                    System.out.println("Thread-" + threadId + " unarrived parties: " + phaser.getUnarrivedParties());
                     if (counter > MAX) {
                         phaser.arriveAndDeregister();
