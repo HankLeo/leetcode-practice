@@ -10,6 +10,7 @@ public class GraphPractices {
         new _1926_Nearest_Exit_From_Entrance_in_Maze().execute();
         new _1466_Reorder_Routes().execute();
         new _399_Evaluate_Division().execute();
+        new _909_Snakes_and_Ladders().execute();
         // DFS
         new _841_Keys_and_Rooms().execute();
     }

@@ -1,5 +1,7 @@
 package io.hank.leetcode.practices.tree;
 
+import io.hank.leetcode.annotations.Topic;
+import io.hank.leetcode.annotations.TopicType;
 import io.hank.leetcode.practices.LeetcodeProblemSolution;
 
 import java.util.LinkedList;
@@ -39,6 +41,7 @@ import java.util.Queue;
  */
 public class _117_Populating_Next_Right_Pointers_in_Each_Node_II extends LeetcodeProblemSolution {
 
+    @Topic(TopicType.BFS)
     public Node connect(Node root) {
         if (root == null) {
             return null;
