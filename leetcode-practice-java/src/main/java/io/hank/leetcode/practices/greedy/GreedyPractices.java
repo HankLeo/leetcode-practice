@@ -11,6 +11,7 @@ public class GreedyPractices {
         new _406_Queue_Reconstruction_by_Height().execute();
         new _121_Best_Time_to_Buy_and_Sell_Stock().execute();
         new _122_Best_Time_to_Buy_and_Sell_Stock_II().execute();
+        new _134_Gas_Station().execute();
         new _605_Can_Place_Flowers().execute();
         new _392_Is_Subsequence().execute();
         new _665_Non_decreasing_Array().execute();
