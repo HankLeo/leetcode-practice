@@ -23,6 +23,7 @@ public class TwoPointerPractices {
         new _26_Remove_Duplicates_From_Sorted_Array().execute();
         new _28_Find_Index_of_First_Occurrence_in_String().execute();
         new _80__26_Remove_Duplicates_From_Sorted_Array_II().execute();
+        new _202_Happy_Number().execute();
     }
 
     public static void main(String[] args) {
