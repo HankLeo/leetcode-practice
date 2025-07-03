@@ -8,6 +8,7 @@ public class StringPractices {
         new _12_Integer_to_Roman().execute();
         new _13_Roman_to_Integer().execute();
         new _14_Longest_Common_Prefix().execute();
+        new _58_Length_of_Last_Word().execute();
         new _242_Valid_Anagram().execute();
         new _409_Longest_Palindrome().execute();
         new _205_Isomorphic_Strings().execute();
