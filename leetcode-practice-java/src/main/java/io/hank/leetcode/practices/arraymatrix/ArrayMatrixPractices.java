@@ -6,6 +6,7 @@ public class ArrayMatrixPractices {
         new _54_Spiral_Matrix().execute();
         new _56_Merge_Intervals().execute();
         new _57_Insert_Interval().execute();
+        new _66_Plus_One().execute();
         new _73_Set_Matrix_Zeroes().execute();
         new _169_Majority_Element().execute();
         new _189_Rotate_Array().execute();
