@@ -18,6 +18,7 @@ public class LinkedListPractices {
         new _138_Copy_List_With_Random_Pointer().execute();
         new _146_LRU_Cache().execute();
         new _25_Reverse_Nodes_In_K_Group().execute();
+        new _61_Rotate_List().execute();
         new _92_Revert_Linked_List_II().execute();
         new _2095_Delete_Mid_Node_of_Linked_List().execute();
         new _2130_Max_Twin_Sum_of_Linked_List().execute();
